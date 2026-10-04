@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BDIBM313 · Unit 2 · Pre-Reading: Why the Machine Is Never the Whole Revolution</title>
+<meta name="description" content="BDIBM313 Unit 2 Pre-Reading: Pre-Reading: Why the Machine Is Never the Whole Revolution">
+<style>
+  :root{--navy:#1D2660;--teal:#00B388;--ink:#1D3A5C;--gray:#F4F6F9;--line:#E3E8F0;--muted:#5A6072;--acc:#7A4FA3}
+  *{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#1a1a1a;background:#FAFBFC;line-height:1.6}
+  .backbar{background:#eef4f0;padding:12px 22px}
+  .backbar a{color:#2E8B6F;text-decoration:none;font-weight:bold;font-size:14px}
+  .backbar a:hover{text-decoration:underline}
+  .hero{background:var(--acc);color:#fff;padding:34px 26px 28px}
+  .hero .kick{font-size:12px;font-weight:bold;letter-spacing:2px;opacity:.85;text-transform:uppercase;margin:0}
+  .hero h1{margin:8px 0 4px;font-size:clamp(24px,4vw,34px);line-height:1.2}
+  .hero .sub{margin:0;font-size:15px;opacity:.92}
+  .hero .unit{margin:10px 0 0;font-size:13px;opacity:.7}
+  main{max-width:820px;margin:0 auto;padding:34px 24px 60px}
+  .ilo{background:#EEF2FB;border-radius:10px;padding:14px 18px;margin:0 0 22px}
+  .ilo .l{font-size:11px;font-weight:bold;letter-spacing:1.2px;text-transform:uppercase;color:var(--acc)}
+  .ilo p{margin:6px 0 0;font-size:14px;color:var(--ink)}
+  .card{background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 2px 8px rgba(29,38,96,.06);padding:26px 28px;margin:0 0 22px}
+  h2.sec{color:var(--ink);font-size:15px;text-transform:uppercase;letter-spacing:.6px;margin:0 0 12px;border-bottom:2px solid var(--acc);padding-bottom:7px;display:inline-block}
+  h3{color:var(--ink);font-size:16px;margin:20px 0 6px}
+  p{margin:0 0 12px;font-size:15px}
+  .lead{font-size:17px;font-weight:bold;color:var(--ink)}
+  .redmsg{border-left:4px solid var(--acc);color:var(--acc);font-weight:bold;font-style:italic;font-size:16px;padding:6px 0 6px 16px;margin:0 0 18px}
+  .story{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin:14px 0 20px}
+  .story .st{background:var(--gray);border-radius:9px;padding:15px 16px}
+  .story .st .lbl{font-size:11px;font-weight:bold;letter-spacing:.5px;color:var(--acc);text-transform:uppercase;margin-bottom:8px}
+  .story .st p{font-size:13.5px;margin:0}
+  ol,ul{margin:6px 0 12px;padding-left:22px} li{margin:0 0 9px;font-size:15px}
+  .phase{display:flex;gap:14px;align-items:baseline;padding:11px 0;border-bottom:1px solid var(--line)}
+  .phase .pt{flex:1;font-size:14.5px} .phase .pm{flex:none;color:var(--muted);font-size:13px;font-weight:bold}
+  .step{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--line)}
+  .step:last-child{border-bottom:none}
+  .step .sn{flex:none;width:30px;height:30px;border-radius:50%;background:var(--acc);color:#fff;font-weight:bold;font-size:13px;display:flex;align-items:center;justify-content:center;margin-top:2px}
+  .step .sb{flex:1}.step .st{font-weight:bold;color:var(--ink);font-size:15px}
+  .step .sm{color:var(--muted);font-size:12.5px;font-weight:bold;margin-left:6px}
+  .step p{font-size:14.5px;margin:4px 0 0}
+  .warm{background:#FFF8DD;border:1px solid #F3E2A0;border-radius:10px;padding:14px 18px;margin:0 0 4px}
+  .warm .wl{font-size:11px;font-weight:bold;letter-spacing:1.2px;text-transform:uppercase;color:#9A7A10}
+  .warm p{margin:6px 0 0;font-size:14.5px}
+  .prov p{font-size:16px;font-weight:bold;color:var(--ink);margin:0 0 6px}
+  .note,.prov p.note{color:var(--muted);font-size:13.5px;font-style:italic;font-weight:normal;margin-top:12px}
+  .deliv{background:var(--gray);border-left:4px solid var(--acc);border-radius:0 8px 8px 0;padding:12px 16px;margin:16px 0 0;font-size:14.5px}
+  .deliv b{color:var(--acc)}
+  .meta{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px}
+  .meta span{font-size:12px;font-weight:bold;color:var(--ink);background:var(--gray);border:1px solid var(--line);border-radius:6px;padding:4px 10px}
+  .facts li{font-size:14.5px}
+  .refbox{background:var(--gray);border-left:4px solid #2E8B6F;border-radius:0 8px 8px 0;padding:14px 16px;margin:14px 0 0}
+  .refbox .rl{font-size:11px;font-weight:bold;letter-spacing:.6px;color:#2E8B6F;display:block;margin-bottom:5px}
+  .refbox p{margin:0 0 6px;font-size:13.5px;overflow-wrap:anywhere}
+  .refbox p:last-child{margin:0}
+  .kt{list-style:none;padding:0;margin:4px 0 0}
+  .kt li{position:relative;padding:10px 0 10px 34px;border-bottom:1px solid var(--line);font-size:15px}
+  .kt li:last-child{border-bottom:none}
+  .kt li::before{content:"\2713";position:absolute;left:0;top:9px;width:22px;height:22px;border-radius:50%;background:var(--acc);color:#fff;font-size:12px;font-weight:bold;display:flex;align-items:center;justify-content:center}
+  .fwlink{display:inline-block;margin-top:6px;font-size:13px;font-weight:bold;color:var(--acc);text-decoration:none}
+  .fwlink:hover{text-decoration:underline}
+  .backlinks{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap}
+  .backlinks a{font-size:13px;font-weight:bold;text-decoration:none;color:var(--ink);background:#fff;border:1px solid var(--line);padding:9px 15px;border-radius:7px}
+  .backlinks a:hover{border-color:var(--acc);background:var(--gray)}
+  .pager{display:flex;justify-content:space-between;gap:12px;margin-top:14px;flex-wrap:wrap}
+  .pager a{font-size:12.5px;color:var(--muted);text-decoration:none;font-weight:bold}
+  .pager a:hover{color:var(--acc)}
+  footer{background:var(--navy);color:#fff;text-align:center;padding:24px;font-size:13px}
+  footer .d{height:2px;width:54px;background:var(--teal);border:none;margin:0 auto 12px}
+  @media(max-width:640px){.story{grid-template-columns:1fr}.card{padding:20px 18px}main{padding:26px 16px 50px}}
+</style>
+</head>
+<body>
+<div class="backbar"><a href="index.html">&larr; Back to Course Overview</a></div>
+<div class="hero"><p class="kick">BDIBM313 · Unit 2 · Pre-Reading</p><h1>Pre-Reading: Why the Machine Is Never the Whole Revolution</h1><p class="sub">Key framework: Multi-Level Perspective on socio-technical transitions</p><p class="unit">Main Drivers of the Digital Revolutions · Format: Role Play</p></div>
+<main>
+<div class="ilo"><span class="l">Learning Focus · ILO 2</span><p>Critically assess the technical and social conditions, such as talent, compute, platforms, consumer habits and policy, that enable a digital revolution and allow digital ventures to emerge and grow.</p></div>
+<div class="card">
+      <p class="redmsg">Key framework: Multi-Level Perspective on socio-technical transitions</p>
+      <p>The Multi-Level Perspective explains big technological change as the interaction of three levels: niches where radical innovations are tried out, the socio-technical regime of established firms, rules, habits and infrastructures, and the wider landscape of slow-moving trends and shocks. A transition happens when landscape pressure weakens the regime and niche innovations are ready to take advantage (Geels, 2002).</p>
+      <h2 class="sec">Key Points</h2><ul><li>Niches are protected spaces, such as start-ups, research labs and early user communities, where radical innovations are developed.</li><li>The socio-technical regime is the established way of doing things: dominant firms, technologies, rules, user habits and infrastructure.</li><li>The landscape consists of broad trends and shocks, such as a pandemic, geopolitics or a new general purpose technology, that put pressure on the regime.</li><li>Digital entrepreneurs succeed when they align technical solutions with social change, not when they simply have the best technology.</li></ul>
+      <a class="fwlink" href="frameworks.html#fw_geels_multilevel_perspective">Open the full reference sheet: Multi-Level Perspective on socio-technical transitions &rarr;</a>
+    </div>
+    <div class="card">
+      <h2 class="sec">Read Before Class</h2>
+      <p>When people talk about digital revolutions, they often focus on machines: the steam engine, the internet, the smartphone, generative AI. Yet history shows that technology alone rarely changes the world. Perez (2002) argues that each technological revolution needs decades of social, financial and institutional change before its full benefits appear. The early digital businesses grew from an engineering culture that valued efficiency, automation and data, but they only became mainstream when consumers, regulators and other businesses changed their habits around them.</p><p>The Multi-Level Perspective helps you see this clearly (Geels, 2002). At the bottom are niches: small, protected spaces where new ideas are tested, such as start-ups, university labs and enthusiastic early users. In the middle is the socio-technical regime, the established system of firms, technologies, rules, infrastructure and user habits. At the top is the landscape: slow trends and sudden shocks, such as demographic change, a pandemic or rising geopolitical tension. Change happens when landscape pressure opens a window and niche innovations have become strong enough to use it.</p><p>Mistral AI illustrates the model. Its niche was open-weight language models built by a small team of experienced researchers. The regime was dominated by US technology giants with their own models, clouds and app stores. The landscape included the generative AI boom after ChatGPT and Europe’s growing concern about technological sovereignty. Mistral grew by connecting to regime actors, such as cloud and chip companies, while offering something the regime lacked: open models and a European alternative (Brynjolfsson and McAfee, 2014; Geels, 2002).</p><p>For a digital entrepreneur, the lesson is practical. Ask not only whether your technology works, but who has to change their behaviour for it to succeed, which established players can help or block you, and which wider trends are working for or against you. Before class, choose one digital service you started using recently and identify the niche it came from, the regime it challenges and the landscape trend that made you adopt it.</p>
+      <div class="refbox"><span class="rl">REFERENCE</span><p>Geels, F.W. (2002) &#x27;Technological transitions as evolutionary reconfiguration processes: a multi-level perspective and a case-study&#x27;, Research Policy, 31(8–9), pp. 1257–1274.</p></div>
+      <div class="refbox"><span class="rl">FURTHER READING &amp; VIEWING</span><p>Perez, C. (2002) Technological Revolutions and Financial Capital: The Dynamics of Bubbles and Golden Ages. Cheltenham: Edward Elgar.</p><p>Brynjolfsson, E. and McAfee, A. (2014) The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies. New York: W.W. Norton.</p><p>Allen, J.P. (2019) Digital Entrepreneurship. New York: Routledge.</p></div>
+    </div>
+<div class="backlinks">
+  <a href="index.html">&larr; Course Overview</a>
+  <a href="gallery.html#unit2">Framework Gallery</a>
+  <a href="slibrary.html#unit2">Framework Authors</a>
+  <a href="glossary.html#unit2">Glossary</a>
+</div>
+<div class="pager"><a href="unit2_case.html">&larr; Case Study</a><a href="unit2_reflection.html">Reflection &rarr;</a></div>
+</main>
+<footer><hr class="d"><p>© 2026 Dr. Hildegard Haas · EU Business School · BDIBM313</p></footer>
+<style id="course-protect-css">
+  *{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none}
+  input,textarea{-webkit-user-select:text;-moz-user-select:text;-ms-user-select:text;user-select:text}
+  @media print{html,body{display:none !important}}
+</style>
+<script id="course-protect-js">
+(function(){
+  // block context menu (right-click)
+  document.addEventListener('contextmenu',function(e){e.preventDefault();},{capture:true});
+  // block copy / cut
+  ['copy','cut'].forEach(function(ev){document.addEventListener(ev,function(e){e.preventDefault();},{capture:true});});
+  // block drag of text/images
+  document.addEventListener('dragstart',function(e){e.preventDefault();},{capture:true});
+  // block common keyboard shortcuts: Ctrl/Cmd + C, X, S, P, U, A  and F12 / devtools
+  document.addEventListener('keydown',function(e){
+    var k=(e.key||'').toLowerCase();
+    var meta=e.ctrlKey||e.metaKey;
+    if(meta && ['c','x','s','p','u','a'].indexOf(k)!==-1){e.preventDefault();return false;}
+    if(k==='f12'){e.preventDefault();return false;}
+    if(meta && e.shiftKey && ['i','j','c'].indexOf(k)!==-1){e.preventDefault();return false;} // devtools
+    if(e.key==='PrintScreen'){e.preventDefault();return false;}
+  },{capture:true});
+  // block print()
+  window.addEventListener('beforeprint',function(e){/* CSS hides body */});
+})();
+</script>
+
+
+</body>
+</html>

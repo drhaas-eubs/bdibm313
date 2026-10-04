@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BDIBM313 · Unit 8 · Pre-Reading: Impact Inside the Engine, Not on the Paintwork</title>
+<meta name="description" content="BDIBM313 Unit 8 Pre-Reading: Pre-Reading: Impact Inside the Engine, Not on the Paintwork">
+<style>
+  :root{--navy:#1D2660;--teal:#00B388;--ink:#1D3A5C;--gray:#F4F6F9;--line:#E3E8F0;--muted:#5A6072;--acc:#3D7F3D}
+  *{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#1a1a1a;background:#FAFBFC;line-height:1.6}
+  .backbar{background:#eef4f0;padding:12px 22px}
+  .backbar a{color:#2E8B6F;text-decoration:none;font-weight:bold;font-size:14px}
+  .backbar a:hover{text-decoration:underline}
+  .hero{background:var(--acc);color:#fff;padding:34px 26px 28px}
+  .hero .kick{font-size:12px;font-weight:bold;letter-spacing:2px;opacity:.85;text-transform:uppercase;margin:0}
+  .hero h1{margin:8px 0 4px;font-size:clamp(24px,4vw,34px);line-height:1.2}
+  .hero .sub{margin:0;font-size:15px;opacity:.92}
+  .hero .unit{margin:10px 0 0;font-size:13px;opacity:.7}
+  main{max-width:820px;margin:0 auto;padding:34px 24px 60px}
+  .ilo{background:#EEF2FB;border-radius:10px;padding:14px 18px;margin:0 0 22px}
+  .ilo .l{font-size:11px;font-weight:bold;letter-spacing:1.2px;text-transform:uppercase;color:var(--acc)}
+  .ilo p{margin:6px 0 0;font-size:14px;color:var(--ink)}
+  .card{background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 2px 8px rgba(29,38,96,.06);padding:26px 28px;margin:0 0 22px}
+  h2.sec{color:var(--ink);font-size:15px;text-transform:uppercase;letter-spacing:.6px;margin:0 0 12px;border-bottom:2px solid var(--acc);padding-bottom:7px;display:inline-block}
+  h3{color:var(--ink);font-size:16px;margin:20px 0 6px}
+  p{margin:0 0 12px;font-size:15px}
+  .lead{font-size:17px;font-weight:bold;color:var(--ink)}
+  .redmsg{border-left:4px solid var(--acc);color:var(--acc);font-weight:bold;font-style:italic;font-size:16px;padding:6px 0 6px 16px;margin:0 0 18px}
+  .story{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin:14px 0 20px}
+  .story .st{background:var(--gray);border-radius:9px;padding:15px 16px}
+  .story .st .lbl{font-size:11px;font-weight:bold;letter-spacing:.5px;color:var(--acc);text-transform:uppercase;margin-bottom:8px}
+  .story .st p{font-size:13.5px;margin:0}
+  ol,ul{margin:6px 0 12px;padding-left:22px} li{margin:0 0 9px;font-size:15px}
+  .phase{display:flex;gap:14px;align-items:baseline;padding:11px 0;border-bottom:1px solid var(--line)}
+  .phase .pt{flex:1;font-size:14.5px} .phase .pm{flex:none;color:var(--muted);font-size:13px;font-weight:bold}
+  .step{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--line)}
+  .step:last-child{border-bottom:none}
+  .step .sn{flex:none;width:30px;height:30px;border-radius:50%;background:var(--acc);color:#fff;font-weight:bold;font-size:13px;display:flex;align-items:center;justify-content:center;margin-top:2px}
+  .step .sb{flex:1}.step .st{font-weight:bold;color:var(--ink);font-size:15px}
+  .step .sm{color:var(--muted);font-size:12.5px;font-weight:bold;margin-left:6px}
+  .step p{font-size:14.5px;margin:4px 0 0}
+  .warm{background:#FFF8DD;border:1px solid #F3E2A0;border-radius:10px;padding:14px 18px;margin:0 0 4px}
+  .warm .wl{font-size:11px;font-weight:bold;letter-spacing:1.2px;text-transform:uppercase;color:#9A7A10}
+  .warm p{margin:6px 0 0;font-size:14.5px}
+  .prov p{font-size:16px;font-weight:bold;color:var(--ink);margin:0 0 6px}
+  .note,.prov p.note{color:var(--muted);font-size:13.5px;font-style:italic;font-weight:normal;margin-top:12px}
+  .deliv{background:var(--gray);border-left:4px solid var(--acc);border-radius:0 8px 8px 0;padding:12px 16px;margin:16px 0 0;font-size:14.5px}
+  .deliv b{color:var(--acc)}
+  .meta{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px}
+  .meta span{font-size:12px;font-weight:bold;color:var(--ink);background:var(--gray);border:1px solid var(--line);border-radius:6px;padding:4px 10px}
+  .facts li{font-size:14.5px}
+  .refbox{background:var(--gray);border-left:4px solid #2E8B6F;border-radius:0 8px 8px 0;padding:14px 16px;margin:14px 0 0}
+  .refbox .rl{font-size:11px;font-weight:bold;letter-spacing:.6px;color:#2E8B6F;display:block;margin-bottom:5px}
+  .refbox p{margin:0 0 6px;font-size:13.5px;overflow-wrap:anywhere}
+  .refbox p:last-child{margin:0}
+  .kt{list-style:none;padding:0;margin:4px 0 0}
+  .kt li{position:relative;padding:10px 0 10px 34px;border-bottom:1px solid var(--line);font-size:15px}
+  .kt li:last-child{border-bottom:none}
+  .kt li::before{content:"\2713";position:absolute;left:0;top:9px;width:22px;height:22px;border-radius:50%;background:var(--acc);color:#fff;font-size:12px;font-weight:bold;display:flex;align-items:center;justify-content:center}
+  .fwlink{display:inline-block;margin-top:6px;font-size:13px;font-weight:bold;color:var(--acc);text-decoration:none}
+  .fwlink:hover{text-decoration:underline}
+  .backlinks{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap}
+  .backlinks a{font-size:13px;font-weight:bold;text-decoration:none;color:var(--ink);background:#fff;border:1px solid var(--line);padding:9px 15px;border-radius:7px}
+  .backlinks a:hover{border-color:var(--acc);background:var(--gray)}
+  .pager{display:flex;justify-content:space-between;gap:12px;margin-top:14px;flex-wrap:wrap}
+  .pager a{font-size:12.5px;color:var(--muted);text-decoration:none;font-weight:bold}
+  .pager a:hover{color:var(--acc)}
+  footer{background:var(--navy);color:#fff;text-align:center;padding:24px;font-size:13px}
+  footer .d{height:2px;width:54px;background:var(--teal);border:none;margin:0 auto 12px}
+  @media(max-width:640px){.story{grid-template-columns:1fr}.card{padding:20px 18px}main{padding:26px 16px 50px}}
+</style>
+</head>
+<body>
+<div class="backbar"><a href="index.html">&larr; Back to Course Overview</a></div>
+<div class="hero"><p class="kick">BDIBM313 · Unit 8 · Pre-Reading</p><h1>Pre-Reading: Impact Inside the Engine, Not on the Paintwork</h1><p class="sub">Key framework: Triple-Layered Business Model Canvas</p><p class="unit">Sustainable Entrepreneurship · Format: World Café</p></div>
+<main>
+<div class="ilo"><span class="l">Learning Focus · ILOs 3 &amp; 4</span><p>Evaluate how digital ventures build social and environmental value into their business models and support networks, and communicate how this differs from traditional, add-on approaches to sustainability.</p></div>
+<div class="card">
+      <p class="redmsg">Key framework: Triple-Layered Business Model Canvas</p>
+      <p>The Triple-Layered Business Model Canvas adds an environmental layer (based on life-cycle thinking) and a social layer (based on stakeholders) underneath the familiar economic Business Model Canvas. It lets founders see whether impact is part of how the business creates value or merely a message on top.</p>
+      <h2 class="sec">Key Points</h2><ul><li>Sustainable entrepreneurs create economic, environmental and social value at the same time, not one after the other.</li><li>The triple bottom line asks founders to measure people, planet and profit — but Elkington himself warned it is often reduced to accounting.</li><li>The Triple-Layered Business Model Canvas makes trade-offs between the three layers visible on one page.</li><li>Digital tools enable impact, but people must accept them, and founders need moral and professional support to keep learning.</li></ul>
+      <a class="fwlink" href="frameworks.html#fw_triple_layered_bmc">Open the full reference sheet: Triple-Layered Business Model Canvas &rarr;</a>
+    </div>
+    <div class="card">
+      <h2 class="sec">Read Before Class</h2>
+      <p>In 1811 English textile workers known as Luddites smashed machines that threatened their jobs. Today &#x27;luddite&#x27; is an insult for anyone who resists technology, yet historians point out that the Luddites were protesting against how machines were used, not against machines as such (Jones, 2006; Merchant, 2023). That distinction matters for sustainable founders. The perceptive entrepreneur neither rejects digital tools nor adopts them blindly: they ask who benefits, who pays, and what happens to the planet. Sustainable entrepreneurship is exactly this — creating economic value while also contributing to environmental and social progress (Schaltegger and Wagner, 2011).</p><p>Elkington (1997) gave this idea a popular name: the triple bottom line of people, planet and profit. Twenty-one years later he argued that many companies had reduced it to a reporting exercise, so the concept had failed to bury the single bottom line paradigm (Elkington, 2018). His warning is the core message of today&#x27;s unit: impact that lives only in the sustainability report or the marketing campaign is &#x27;bolted on&#x27;. Impact that sits inside the value proposition, the revenue streams and the partner network is &#x27;built in&#x27;, and it grows when the company grows.</p><p>Joyce and Paquin (2016) turned this into a practical tool. Their Triple-Layered Business Model Canvas keeps Osterwalder and Pigneur&#x27;s nine economic blocks and adds two more layers. The environmental layer asks about functional value, materials, production, distribution, use phase, end-of-life, environmental impacts and benefits. The social layer asks about social value, employees, governance, communities, societal culture, scale of outreach, end-users, social impacts and benefits. Reading the layers horizontally shows coherence within one layer; reading them vertically shows how a decision in one layer affects the others.</p><p>Look at Too Good To Go before class. Its revenue (a fee per Surprise Bag) is directly linked to its environmental benefit (food saved) and its social value (affordable meals, extra income for shops). But no model is perfect: founders must keep checking unintended effects, persuade partners to adopt the app, and keep learning as technology and regulation change. Davis (1989) reminds us that people adopt tools they find useful and easy to use; Kram (1985) shows that mentors provide both career and psychosocial support. Bring one example of &#x27;built-in&#x27; and one of &#x27;bolted-on&#x27; impact to the café.</p>
+      <div class="refbox"><span class="rl">REFERENCE</span><p>Joyce, A. and Paquin, R.L. (2016) &#x27;The triple layered business model canvas: A tool to design more sustainable business models&#x27;, Journal of Cleaner Production, 135, pp. 1474–1486.</p></div>
+      <div class="refbox"><span class="rl">FURTHER READING &amp; VIEWING</span><p>Schaltegger, S. and Wagner, M. (2011) &#x27;Sustainable entrepreneurship and sustainability innovation: Categories and interactions&#x27;, Business Strategy and the Environment, 20(4), pp. 222–237.</p><p>Elkington, J. (2018) &#x27;25 years ago I coined the phrase &quot;triple bottom line.&quot; Here&#x27;s why it&#x27;s time to rethink it&#x27;, Harvard Business Review, 25 June. Available at: https://hbr.org/2018/06/25-years-ago-i-coined-the-phrase-triple-bottom-line-heres-why-im-giving-up-on-it (Accessed: 4 October 2026).</p><p>Porter, M.E. and Kramer, M.R. (2011) &#x27;Creating shared value&#x27;, Harvard Business Review, 89(1/2), pp. 62–77.</p></div>
+    </div>
+<div class="backlinks">
+  <a href="index.html">&larr; Course Overview</a>
+  <a href="gallery.html#unit8">Framework Gallery</a>
+  <a href="slibrary.html#unit8">Framework Authors</a>
+  <a href="glossary.html#unit8">Glossary</a>
+</div>
+<div class="pager"><a href="unit8_case.html">&larr; Case Study</a><a href="unit8_reflection.html">Reflection &rarr;</a></div>
+</main>
+<footer><hr class="d"><p>© 2026 Dr. Hildegard Haas · EU Business School · BDIBM313</p></footer>
+<style id="course-protect-css">
+  *{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none}
+  input,textarea{-webkit-user-select:text;-moz-user-select:text;-ms-user-select:text;user-select:text}
+  @media print{html,body{display:none !important}}
+</style>
+<script id="course-protect-js">
+(function(){
+  // block context menu (right-click)
+  document.addEventListener('contextmenu',function(e){e.preventDefault();},{capture:true});
+  // block copy / cut
+  ['copy','cut'].forEach(function(ev){document.addEventListener(ev,function(e){e.preventDefault();},{capture:true});});
+  // block drag of text/images
+  document.addEventListener('dragstart',function(e){e.preventDefault();},{capture:true});
+  // block common keyboard shortcuts: Ctrl/Cmd + C, X, S, P, U, A  and F12 / devtools
+  document.addEventListener('keydown',function(e){
+    var k=(e.key||'').toLowerCase();
+    var meta=e.ctrlKey||e.metaKey;
+    if(meta && ['c','x','s','p','u','a'].indexOf(k)!==-1){e.preventDefault();return false;}
+    if(k==='f12'){e.preventDefault();return false;}
+    if(meta && e.shiftKey && ['i','j','c'].indexOf(k)!==-1){e.preventDefault();return false;} // devtools
+    if(e.key==='PrintScreen'){e.preventDefault();return false;}
+  },{capture:true});
+  // block print()
+  window.addEventListener('beforeprint',function(e){/* CSS hides body */});
+})();
+</script>
+
+
+</body>
+</html>

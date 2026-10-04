@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BDIBM313 · Unit 4 · Vinted: From Burning Cash to Choosing Where to Spend</title>
+<meta name="description" content="BDIBM313 Unit 4 Case Study: Vinted: From Burning Cash to Choosing Where to Spend">
+<style>
+  :root{--navy:#1D2660;--teal:#00B388;--ink:#1D3A5C;--gray:#F4F6F9;--line:#E3E8F0;--muted:#5A6072;--acc:#C77C2E}
+  *{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#1a1a1a;background:#FAFBFC;line-height:1.6}
+  .backbar{background:#eef4f0;padding:12px 22px}
+  .backbar a{color:#2E8B6F;text-decoration:none;font-weight:bold;font-size:14px}
+  .backbar a:hover{text-decoration:underline}
+  .hero{background:var(--acc);color:#fff;padding:34px 26px 28px}
+  .hero .kick{font-size:12px;font-weight:bold;letter-spacing:2px;opacity:.85;text-transform:uppercase;margin:0}
+  .hero h1{margin:8px 0 4px;font-size:clamp(24px,4vw,34px);line-height:1.2}
+  .hero .sub{margin:0;font-size:15px;opacity:.92}
+  .hero .unit{margin:10px 0 0;font-size:13px;opacity:.7}
+  main{max-width:820px;margin:0 auto;padding:34px 24px 60px}
+  .ilo{background:#EEF2FB;border-radius:10px;padding:14px 18px;margin:0 0 22px}
+  .ilo .l{font-size:11px;font-weight:bold;letter-spacing:1.2px;text-transform:uppercase;color:var(--acc)}
+  .ilo p{margin:6px 0 0;font-size:14px;color:var(--ink)}
+  .card{background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 2px 8px rgba(29,38,96,.06);padding:26px 28px;margin:0 0 22px}
+  h2.sec{color:var(--ink);font-size:15px;text-transform:uppercase;letter-spacing:.6px;margin:0 0 12px;border-bottom:2px solid var(--acc);padding-bottom:7px;display:inline-block}
+  h3{color:var(--ink);font-size:16px;margin:20px 0 6px}
+  p{margin:0 0 12px;font-size:15px}
+  .lead{font-size:17px;font-weight:bold;color:var(--ink)}
+  .redmsg{border-left:4px solid var(--acc);color:var(--acc);font-weight:bold;font-style:italic;font-size:16px;padding:6px 0 6px 16px;margin:0 0 18px}
+  .story{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin:14px 0 20px}
+  .story .st{background:var(--gray);border-radius:9px;padding:15px 16px}
+  .story .st .lbl{font-size:11px;font-weight:bold;letter-spacing:.5px;color:var(--acc);text-transform:uppercase;margin-bottom:8px}
+  .story .st p{font-size:13.5px;margin:0}
+  ol,ul{margin:6px 0 12px;padding-left:22px} li{margin:0 0 9px;font-size:15px}
+  .phase{display:flex;gap:14px;align-items:baseline;padding:11px 0;border-bottom:1px solid var(--line)}
+  .phase .pt{flex:1;font-size:14.5px} .phase .pm{flex:none;color:var(--muted);font-size:13px;font-weight:bold}
+  .step{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--line)}
+  .step:last-child{border-bottom:none}
+  .step .sn{flex:none;width:30px;height:30px;border-radius:50%;background:var(--acc);color:#fff;font-weight:bold;font-size:13px;display:flex;align-items:center;justify-content:center;margin-top:2px}
+  .step .sb{flex:1}.step .st{font-weight:bold;color:var(--ink);font-size:15px}
+  .step .sm{color:var(--muted);font-size:12.5px;font-weight:bold;margin-left:6px}
+  .step p{font-size:14.5px;margin:4px 0 0}
+  .warm{background:#FFF8DD;border:1px solid #F3E2A0;border-radius:10px;padding:14px 18px;margin:0 0 4px}
+  .warm .wl{font-size:11px;font-weight:bold;letter-spacing:1.2px;text-transform:uppercase;color:#9A7A10}
+  .warm p{margin:6px 0 0;font-size:14.5px}
+  .prov p{font-size:16px;font-weight:bold;color:var(--ink);margin:0 0 6px}
+  .note,.prov p.note{color:var(--muted);font-size:13.5px;font-style:italic;font-weight:normal;margin-top:12px}
+  .deliv{background:var(--gray);border-left:4px solid var(--acc);border-radius:0 8px 8px 0;padding:12px 16px;margin:16px 0 0;font-size:14.5px}
+  .deliv b{color:var(--acc)}
+  .meta{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px}
+  .meta span{font-size:12px;font-weight:bold;color:var(--ink);background:var(--gray);border:1px solid var(--line);border-radius:6px;padding:4px 10px}
+  .facts li{font-size:14.5px}
+  .refbox{background:var(--gray);border-left:4px solid #2E8B6F;border-radius:0 8px 8px 0;padding:14px 16px;margin:14px 0 0}
+  .refbox .rl{font-size:11px;font-weight:bold;letter-spacing:.6px;color:#2E8B6F;display:block;margin-bottom:5px}
+  .refbox p{margin:0 0 6px;font-size:13.5px;overflow-wrap:anywhere}
+  .refbox p:last-child{margin:0}
+  .kt{list-style:none;padding:0;margin:4px 0 0}
+  .kt li{position:relative;padding:10px 0 10px 34px;border-bottom:1px solid var(--line);font-size:15px}
+  .kt li:last-child{border-bottom:none}
+  .kt li::before{content:"\2713";position:absolute;left:0;top:9px;width:22px;height:22px;border-radius:50%;background:var(--acc);color:#fff;font-size:12px;font-weight:bold;display:flex;align-items:center;justify-content:center}
+  .fwlink{display:inline-block;margin-top:6px;font-size:13px;font-weight:bold;color:var(--acc);text-decoration:none}
+  .fwlink:hover{text-decoration:underline}
+  .backlinks{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap}
+  .backlinks a{font-size:13px;font-weight:bold;text-decoration:none;color:var(--ink);background:#fff;border:1px solid var(--line);padding:9px 15px;border-radius:7px}
+  .backlinks a:hover{border-color:var(--acc);background:var(--gray)}
+  .pager{display:flex;justify-content:space-between;gap:12px;margin-top:14px;flex-wrap:wrap}
+  .pager a{font-size:12.5px;color:var(--muted);text-decoration:none;font-weight:bold}
+  .pager a:hover{color:var(--acc)}
+  footer{background:var(--navy);color:#fff;text-align:center;padding:24px;font-size:13px}
+  footer .d{height:2px;width:54px;background:var(--teal);border:none;margin:0 auto 12px}
+  @media(max-width:640px){.story{grid-template-columns:1fr}.card{padding:20px 18px}main{padding:26px 16px 50px}}
+</style>
+</head>
+<body>
+<div class="backbar"><a href="index.html">&larr; Back to Course Overview</a></div>
+<div class="hero"><p class="kick">BDIBM313 · Unit 4 · Case Study</p><h1>Vinted: From Burning Cash to Choosing Where to Spend</h1><p class="sub">How a Lithuanian second-hand marketplace turned hard resource choices into Europe&#x27;s first profitable pre-loved fashion platform.</p><p class="unit">Acting on Digital Entrepreneurial Forces · Format: Business Challenge</p></div>
+<main>
+<div class="ilo"><span class="l">Learning Focus · ILOs 1 &amp; 3</span><p>Investigate how digital ventures turn opportunities into strategy, budgets and channel choices, and evaluate the entrepreneurial management decisions and leadership needed to allocate scarce resources under pressure.</p></div>
+<div class="card">
+      <p class="lead">Vinted: From Burning Cash to Choosing Where to Spend</p>
+      <p style="color:var(--muted)">How a Lithuanian second-hand marketplace turned hard resource choices into Europe&#x27;s first profitable pre-loved fashion platform.</p>
+      <div class="meta"><span>Vinted</span><span>Lithuania</span><span>2021–2026</span></div>
+      <h2 class="sec">Key Facts</h2>
+      <ul class="facts"><li>Vinted was founded in Lithuania in 2008; by 2015 it was &#x27;burning money&#x27; and brought in Thomas Plantenga, who became CEO (Gollasch, 2025).</li><li>Plantenga cut headcount, centralised operations in Lithuania, closed overseas offices, removed seller fees and introduced a buyer protection fee instead (Macaulay, 2024).</li><li>Unusually for a digital-only brand, Vinted invested in TV advertising and in 2023 partnered with Channel 4 on a branded entertainment series to change perceptions of second-hand clothing (Gollasch, 2025).</li><li>In 2023 revenue grew 61% to €596.3 million and Vinted made its first net profit of €17.8 million, after a €20.4 million loss in 2022 (Vinted, 2024).</li><li>In 2023 Vinted also secured a €50 million revolving credit facility from BNP Paribas and ING, acquired the Dutch delivery company Homerr and installed about 1,500 Vinted Go lockers and pick-up points (Vinted, 2024).</li><li>In 2024 revenue rose 36% to €813.4 million and net profit to €76.7 million; a secondary share sale in October 2024 valued the company at €5 billion (Vinted, 2025).</li><li>In 2025 gross merchandise value grew 47% to €10.8 billion and revenue to €1.1 billion, while net profit fell 19% to €62 million as Vinted invested in Vinted Go, Vinted Pay and new markets (Vinted, 2026).</li></ul>
+    </div>
+    <div class="card">
+      <h2 class="sec">The Storyline (after Bostelaar)</h2>
+      <div class="story">
+        <div class="st"><div class="lbl">Beginning · Misbelief</div><p>Many founders believe a marketplace should charge sellers, because they are the ones earning money, and that a digital company should only market itself online. Vinted followed this logic early on and was losing money.</p></div>
+        <div class="st"><div class="lbl">Middle · Insight</div><p>Vinted removed seller fees to attract supply and charged buyers for protection instead, then spent on TV and on its own parcel network rather than only on online ads. Each choice meant saying no to something else, and profit arrived only in 2023.</p></div>
+        <div class="st"><div class="lbl">End · Understanding</div><p>Opportunity in second-hand fashion was visible to everyone; Vinted won by deciding where to spend first: sellers, brand trust and logistics. In 2025 it again accepted lower profit to invest in delivery and payments, showing that strategy is a continuous resource decision.</p></div>
+      </div>
+      <h2 class="sec">Your Task</h2><p>Your team is Vinted&#x27;s strategy committee in early 2025. Use a SWOT/TOWS matrix to assess Vinted&#x27;s options for growth, and the VRIO / Resource-Based View to test whether Vinted Go and Vinted Pay are real sources of competitive advantage. Then use the Bullseye Traction Framework and Paid–Owned–Earned Media (POEM) to propose how Vinted should split a €10 million marketing budget for entering a new market. Present your recommendation in a 3-minute board briefing.</p>
+      <h3>Discussion Questions</h3>
+      <ol><li>Analyse: Which resources and decisions (seller fees, buyer protection fee, TV, Vinted Go) best explain Vinted&#x27;s move from loss to profit in 2023?</li><li>Evaluate: In 2025 Vinted grew revenue but accepted lower profit to invest in logistics and payments. Was this the right use of scarce resources? Argue for or against.</li><li>Create: Design a 12-month launch budget and cross-media channel plan for a Vinted-style marketplace for second-hand sports equipment in Germany, including a target CAC and LTV.</li></ol>
+      <div class="refbox"><span class="rl">SOURCES · HARVARD STYLE</span><p>Vinted (2024) &#x27;Vinted delivers strong year of growth and reaches profitability, while investing for the future&#x27;, Vinted Newsroom, 29 April. Available at: https://company.vinted.com/newsroom/vinted-reaches-profitability (Accessed: 4 October 2026).</p><p>Vinted (2025) &#x27;Vinted delivers strong, profitable growth, while investing in Vinted Go and Vinted Pay&#x27;, Vinted Newsroom, 29 April. Available at: https://company.vinted.com/newsroom/Vinted-delivers-strong-profitable-growth-while-investing (Accessed: 4 October 2026).</p><p>Vinted (2026) &#x27;Vinted grew GMV by 47% YoY to €10.8bn, generating €1.1bn in annual revenue and €62m in net profit, as it brings second-hand goods to more people in 2025&#x27;, Vinted Newsroom, 9 April. Available at: https://company.vinted.com/newsroom/financial-results-2025 (Accessed: 4 October 2026).</p><p>Macaulay, T. (2024) &#x27;How Vinted became the first profitable ‘pre-loved’ clothing marketplace&#x27;, TNW, 11 June. Available at: https://thenextweb.com/news/vinted-ceo-thomas-plagenta-interview-second-hand-fashion (Accessed: 4 October 2026).</p><p>Gollasch, G. (2025) &#x27;How TV and shifting perceptions changed Vinted’s fortunes&#x27;, Marketing Week, 2 July. Available at: https://www.marketingweek.com/vinted-tv-advertising-circular/ (Accessed: 4 October 2026).</p></div>
+    </div>
+<div class="backlinks">
+  <a href="index.html">&larr; Course Overview</a>
+  <a href="gallery.html#unit4">Framework Gallery</a>
+  <a href="slibrary.html#unit4">Framework Authors</a>
+  <a href="glossary.html#unit4">Glossary</a>
+</div>
+<div class="pager"><a href="unit4_activity.html">&larr; Activity</a><a href="unit4_prereading.html">Pre-Reading &rarr;</a></div>
+</main>
+<footer><hr class="d"><p>© 2026 Dr. Hildegard Haas · EU Business School · BDIBM313</p></footer>
+<style id="course-protect-css">
+  *{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none}
+  input,textarea{-webkit-user-select:text;-moz-user-select:text;-ms-user-select:text;user-select:text}
+  @media print{html,body{display:none !important}}
+</style>
+<script id="course-protect-js">
+(function(){
+  // block context menu (right-click)
+  document.addEventListener('contextmenu',function(e){e.preventDefault();},{capture:true});
+  // block copy / cut
+  ['copy','cut'].forEach(function(ev){document.addEventListener(ev,function(e){e.preventDefault();},{capture:true});});
+  // block drag of text/images
+  document.addEventListener('dragstart',function(e){e.preventDefault();},{capture:true});
+  // block common keyboard shortcuts: Ctrl/Cmd + C, X, S, P, U, A  and F12 / devtools
+  document.addEventListener('keydown',function(e){
+    var k=(e.key||'').toLowerCase();
+    var meta=e.ctrlKey||e.metaKey;
+    if(meta && ['c','x','s','p','u','a'].indexOf(k)!==-1){e.preventDefault();return false;}
+    if(k==='f12'){e.preventDefault();return false;}
+    if(meta && e.shiftKey && ['i','j','c'].indexOf(k)!==-1){e.preventDefault();return false;} // devtools
+    if(e.key==='PrintScreen'){e.preventDefault();return false;}
+  },{capture:true});
+  // block print()
+  window.addEventListener('beforeprint',function(e){/* CSS hides body */});
+})();
+</script>
+
+
+</body>
+</html>

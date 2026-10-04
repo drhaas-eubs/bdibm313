@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BDIBM313 — Entrepreneurship in Digitalization</title>
+<meta name="description" content="BDIBM313 — Entrepreneurship in Digitalization. Eleven active-learning units, framework galleries, author profiles and glossary. Dr. Hildegard Haas, EU Business School.">
+<style>
+  :root{--navy:#1D2660;--teal:#00B388;--yellow:#FFD23F;--gray:#F4F5F8;--body:#222;--muted:#5A6072;--border:#E5E8EF;--shadow:0 2px 8px rgba(29,38,96,.08);--shadow-hover:0 8px 24px rgba(29,38,96,.16)}
+  *{box-sizing:border-box}html{scroll-behavior:smooth}
+  body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--body);background:#FAFBFC;line-height:1.55}
+  header.hero{background:var(--navy);color:#fff;padding:52px 24px 40px;text-align:center}
+  header.hero .kicker{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--yellow);margin:0 0 14px;font-weight:bold}
+  header.hero h1{margin:0 0 10px;font-size:clamp(28px,5vw,46px);letter-spacing:.3px}
+  header.hero .tag{margin:0;font-size:clamp(14px,2vw,17px);opacity:.9}
+  header.hero .copyright{margin:12px 0 0;font-size:13px;opacity:.65;font-style:italic}
+  .stats{max-width:1000px;margin:30px auto 0;display:flex;flex-wrap:wrap;justify-content:center;gap:38px}
+  .stat{text-align:center}
+  .stat .num{font-size:32px;font-weight:bold;color:var(--teal);line-height:1}
+  .stat .lbl{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;opacity:.75;margin-top:6px;color:#fff}
+  .hero-accent{height:4px;background:var(--teal);width:100%}
+  main{max-width:1000px;margin:0 auto;padding:36px 20px 20px}
+  .search-wrap{margin:0 0 30px}
+  .search-wrap input{width:100%;font-family:inherit;font-size:15px;color:var(--body);padding:14px 16px 14px 44px;border:1px solid #DADEE6;border-radius:10px;background:#fff url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23999' stroke-width='2'><circle cx='11' cy='11' r='7'/><line x1='21' y1='21' x2='16.65' y2='16.65'/></svg>") no-repeat 16px center;box-shadow:var(--shadow)}
+  .search-wrap input:focus{outline:none;border-color:var(--teal)}
+  h2.block-label{font-size:15px;color:var(--navy);margin:0 0 6px;font-weight:bold}
+  p.block-lead{color:var(--muted);font-size:14px;margin:0 0 20px;max-width:820px}
+  p.block-lead strong{color:var(--navy)}
+  details.unit{background:#fff;border:1px solid var(--border);border-radius:12px;margin:0 0 16px;box-shadow:var(--shadow);overflow:hidden}
+  details.unit[open]{box-shadow:var(--shadow-hover)}
+  summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:16px;padding:20px 22px}
+  summary::-webkit-details-marker{display:none}
+  .u-badge{flex:none;width:38px;height:38px;border-radius:9px;color:#fff;font-weight:bold;font-size:17px;display:flex;align-items:center;justify-content:center}
+  .u-headings{flex:1;display:flex;flex-direction:column;gap:8px}
+  .u-title{font-size:17px;font-weight:bold;color:var(--navy);line-height:1.25}
+  .u-format{align-self:flex-start;font-size:11px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:var(--muted);background:var(--gray);border:1px solid var(--border);padding:5px 11px;border-radius:6px}
+  .u-chevron{flex:none;color:var(--muted);font-size:16px;transition:transform .2s}
+  details.unit[open] .u-chevron{transform:rotate(180deg)}
+  .u-body{padding:0 22px 22px}
+  .coremsg{background:#EEF2FB;border-radius:10px;padding:16px 18px;margin:0 0 18px}
+  .coremsg-label{font-size:11px;font-weight:bold;letter-spacing:1.5px;text-transform:uppercase;color:#4A5AA8}
+  .coremsg-text{font-size:15.5px;font-weight:bold;font-style:italic;color:var(--navy);margin:8px 0 0;line-height:1.45}
+  .coremsg-ilo{font-size:13px;color:var(--muted);margin:12px 0 0}
+  .coremsg-ilo strong{color:var(--navy)}
+  .rows{display:flex;flex-direction:column;gap:10px}
+  .rrow{display:flex;align-items:center;gap:14px;background:#fff;border:1px solid var(--border);border-radius:9px;padding:13px 16px;text-decoration:none;color:inherit;transition:border-color .15s,box-shadow .15s,transform .15s}
+  a.rrow:hover{border-color:var(--teal);box-shadow:var(--shadow);transform:translateY(-1px)}
+  .rrow-badge{flex:none;width:36px;height:36px;border-radius:8px;color:#fff;font-weight:bold;font-size:12px;display:flex;align-items:center;justify-content:center;letter-spacing:.5px}
+  .rrow-main{flex:1;min-width:0}
+  .rrow-title{font-size:14.5px;font-weight:bold;color:var(--navy);line-height:1.3}
+  .rrow-sub{font-size:12.5px;color:var(--muted);margin-top:2px}
+  .rrow-right{flex:none;font-size:11px;font-weight:bold;letter-spacing:.5px;color:var(--muted)}
+  .big-links{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0 8px}
+  .big-links a{display:block;background:var(--navy);color:#fff;text-decoration:none;border-radius:10px;padding:22px 24px;font-weight:bold;font-size:15.5px;box-shadow:var(--shadow);transition:transform .18s,box-shadow .18s}
+  .big-links a:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover);background:#243075}
+  .big-links a .sub{display:block;font-weight:normal;font-size:12.5px;opacity:.8;margin-top:6px}
+  .big-links a .mark{color:var(--teal);margin-right:8px}
+  .ess{display:grid;grid-template-columns:1.25fr 1fr;gap:16px;margin:10px 0 0}
+  .ess-card{background:#fff;border:1px solid var(--border);border-radius:12px;box-shadow:var(--shadow);padding:20px 22px}
+  .ess-card h3{margin:0 0 10px;font-size:13px;letter-spacing:1.2px;text-transform:uppercase;color:#4A5AA8}
+  .ess-card ol{margin:0;padding-left:20px}.ess-card li{font-size:13.5px;margin:0 0 8px;color:var(--body)}
+  .as{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--border)}
+  .as:last-of-type{border-bottom:none}
+  .as .pct{flex:none;width:58px;height:58px;border-radius:10px;color:#fff;font-weight:bold;font-size:18px;display:flex;align-items:center;justify-content:center}
+  .as .nm{font-weight:bold;color:var(--navy);font-size:14.5px}
+  .as .dt{font-size:12.5px;color:var(--muted);margin-top:2px}
+  .facts{font-size:12.5px;color:var(--muted);margin:12px 0 0}
+  footer.site{background:var(--navy);color:#fff;padding:30px 24px;text-align:center;margin-top:48px}
+  footer.site p{margin:4px 0;font-size:13.5px;opacity:.9}
+  footer.site .divider{height:2px;width:60px;background:var(--teal);margin:0 auto 14px;border:none}
+  footer.site strong{color:var(--teal)}
+  .hidden{display:none !important}
+  @media(max-width:760px){.ess{grid-template-columns:1fr}}
+  @media(max-width:640px){.big-links{grid-template-columns:1fr}.u-title{font-size:15.5px}.stats{gap:24px}summary{padding:16px}.u-body{padding:0 14px 16px}.rrow{padding:11px 12px;gap:11px}.rrow-right{display:none}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <p class="kicker">BDIBM313 · Bachelor Year 3 · FHEQ Level 6 · Semester 5 · 5 ECTS · Fall 26</p>
+  <h1>Entrepreneurship in Digitalization</h1>
+  <p class="tag">Active-Learning Units · Framework Galleries · Glossary · Author Profiles</p>
+  <p class="copyright">© 2026 Dr. Hildegard Haas · EU Business School</p>
+  <div class="stats">
+    <div class="stat"><div class="num">11</div><div class="lbl">Units</div></div>
+    <div class="stat"><div class="num">22</div><div class="lbl">Slibraries</div></div>
+    <div class="stat"><div class="num">88</div><div class="lbl">Frameworks</div></div>
+    <div class="stat"><div class="num">86</div><div class="lbl">Authors</div></div>
+    <div class="stat"><div class="num">66</div><div class="lbl">Definitions</div></div>
+  </div>
+</header>
+<div class="hero-accent"></div>
+
+<main>
+  <div class="search-wrap">
+    <input id="siteSearch" type="text" placeholder="Search units, frameworks, cases, activities…" aria-label="Search the course">
+  </div>
+
+  <h2 class="block-label">Course Units</h2>
+  <p class="block-lead">Eleven teaching units following the AY26/27 course outline, in the EU Business School active-learning model. Each unit pairs a signature dynamic format — <strong>Presentation, Role Play, Mini-Hackathon, Business Challenge, Case Study, Prototype Sprint, Debate, World Café, Pitch Simulation, Ethics Tribunal</strong> or <strong>Roundtable</strong> — with a core message distilled in Kurt Bostelaar's method, its Intended Learning Outcome, a recent real-world case (2021 or later), a Thumbnail-Thinking framework gallery, pre-reading, a reflection prompt with key takeaways, and the framework authors. Expand a unit to begin.</p>
+
+  <div id="unitList">
+    <details class="unit" open>
+      <summary>
+        <span class="u-badge" style="background:#4A5AA8">1</span>
+        <span class="u-headings">
+          <span class="u-title">Introduction to Entrepreneurship in Digitalization</span>
+          <span class="u-format">PRESENTATION</span>
+        </span>
+        <span class="u-chevron" aria-hidden="true">&#9662;</span>
+      </summary>
+      <div class="u-body">
+        <div class="coremsg">
+          <span class="coremsg-label">Core Message · Unit 1</span>
+          <p class="coremsg-text">Going digital does not change what customers need; it changes who can serve them, how fast and at what cost.</p>
+          <p class="coremsg-ilo"><strong>Learning focus · ILOs 1 &amp; 4</strong> — Investigate how digital artifacts, platforms and infrastructure change the way a venture creates and delivers value, and communicate the main differences between a traditional and a digitally governed business.</p>
+        </div>
+        <div class="rows">
+      <a class="rrow" href="gallery.html#unit1"><div class="rrow-badge" style="background:#1D2660">FG</div>
+      <div class="rrow-main"><div class="rrow-title">Framework Gallery</div><div class="rrow-sub">8 interactive frameworks · Slibraries 1–2</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="unit1_activity.html"><div class="rrow-badge" style="background:#4A5AA8">PR</div>
+      <div class="rrow-main"><div class="rrow-title">Presentation — The Thumbnail Pitch</div><div class="rrow-sub">Teams redesign a real traditional Munich business as a digital venture on one hand-drawn sheet and pitch it live in three minutes.</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="unit1_case.html"><div class="rrow-badge" style="background:#2E8B6F">CS</div>
+      <div class="rrow-main"><div class="rrow-title">Case: Gorillas: Ten Minutes to Unicorn, Four Years to Shutdown</div><div class="rrow-sub">How a Berlin grocery app turned digital speed into a billion-dollar valuation, and why the physical side of the business caught up with it.</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="unit1_prereading.html"><div class="rrow-badge" style="background:#C77C2E">PR</div>
+      <div class="rrow-main"><div class="rrow-title">Pre-Reading: Is Your Start-up Digital, or Does It Just Have an App?</div><div class="rrow-sub">Key framework: Nambisan&#x27;s Digital Entrepreneurship Elements</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="unit1_reflection.html"><div class="rrow-badge" style="background:#7A4FA3">RF</div>
+      <div class="rrow-main"><div class="rrow-title">Reflection Prompt &amp; Key Takeaways</div><div class="rrow-sub">3 questions for independent study · 5 key takeaways</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="slibrary.html#unit1"><div class="rrow-badge" style="background:#3E8E7E">AU</div>
+      <div class="rrow-main"><div class="rrow-title">Framework Authors — Slibrary</div><div class="rrow-sub">8 thinkers · Satish Nambisan, Hull, Hung, Hair, Perotti &amp; DeMartino, Jeffry A. Timmons, Sussan &amp; Acs, David L. Rogers, Clayton M. Christensen…</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="glossary.html#unit1"><div class="rrow-badge" style="background:#2F5D8C">GL</div>
+      <div class="rrow-main"><div class="rrow-title">Glossary &mdash; Unit 1</div><div class="rrow-sub">6 professional definitions &middot; Harvard-referenced &middot; Digital entrepreneurship, Digital artifact, Digital platform, Digital infrastructure&hellip;</div></div>
+      <div class="rrow-right">HTML</div></a>
+        </div>
+      </div>
+    </details>
+    <details class="unit">
+      <summary>
+        <span class="u-badge" style="background:#7A4FA3">2</span>
+        <span class="u-headings">
+          <span class="u-title">Main Drivers of the Digital Revolutions</span>
+          <span class="u-format">ROLE PLAY</span>
+        </span>
+        <span class="u-chevron" aria-hidden="true">&#9662;</span>
+      </summary>
+      <div class="u-body">
+        <div class="coremsg">
+          <span class="coremsg-label">Core Message · Unit 2</span>
+          <p class="coremsg-text">Technology does not start revolutions; people who combine new tools with new habits do.</p>
+          <p class="coremsg-ilo"><strong>Learning focus · ILO 2</strong> — Critically assess the technical and social conditions, such as talent, compute, platforms, consumer habits and policy, that enable a digital revolution and allow digital ventures to emerge and grow.</p>
+        </div>
+        <div class="rows">
+      <a class="rrow" href="gallery.html#unit2"><div class="rrow-badge" style="background:#1D2660">FG</div>
+      <div class="rrow-main"><div class="rrow-title">Framework Gallery</div><div class="rrow-sub">8 interactive frameworks · Slibraries 3–4</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="unit2_activity.html"><div class="rrow-badge" style="background:#7A4FA3">RP</div>
+      <div class="rrow-main"><div class="rrow-title">Role Play — The Paris AI Table</div><div class="rrow-sub">Students take on the real actors behind Mistral AI (founders, investors, chipmakers, cloud partners, regulators, developers, customers) and negotiate what a European AI venture needs to survive.</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="unit2_case.html"><div class="rrow-badge" style="background:#2E8B6F">CS</div>
+      <div class="rrow-main"><div class="rrow-title">Case: Mistral AI: Building Europe’s AI Challenger from Talent, Chips and Open Code</div><div class="rrow-sub">How three researchers turned expertise, open models, partners and policy momentum into Europe’s most valuable AI start-up in three years.</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="unit2_prereading.html"><div class="rrow-badge" style="background:#C77C2E">PR</div>
+      <div class="rrow-main"><div class="rrow-title">Pre-Reading: Why the Machine Is Never the Whole Revolution</div><div class="rrow-sub">Key framework: Multi-Level Perspective on socio-technical transitions</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="unit2_reflection.html"><div class="rrow-badge" style="background:#7A4FA3">RF</div>
+      <div class="rrow-main"><div class="rrow-title">Reflection Prompt &amp; Key Takeaways</div><div class="rrow-sub">3 questions for independent study · 5 key takeaways</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="slibrary.html#unit2"><div class="rrow-badge" style="background:#3E8E7E">AU</div>
+      <div class="rrow-main"><div class="rrow-title">Framework Authors — Slibrary</div><div class="rrow-sub">8 thinkers · Carlota Perez, Everett M. Rogers, Fenn &amp; Raskino, Brynjolfsson &amp; McAfee, Parker, Van Alstyne &amp; Choudary, Katz, Shapiro &amp; Varian…</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="glossary.html#unit2"><div class="rrow-badge" style="background:#2F5D8C">GL</div>
+      <div class="rrow-main"><div class="rrow-title">Glossary &mdash; Unit 2</div><div class="rrow-sub">6 professional definitions &middot; Harvard-referenced &middot; Digital revolution, Network effects, Platform ecosystem, Diffusion of innovation&hellip;</div></div>
+      <div class="rrow-right">HTML</div></a>
+        </div>
+      </div>
+    </details>
+    <details class="unit">
+      <summary>
+        <span class="u-badge" style="background:#2C7A9E">3</span>
+        <span class="u-headings">
+          <span class="u-title">Digital Entrepreneurial Processes</span>
+          <span class="u-format">MINI-HACKATHON</span>
+        </span>
+        <span class="u-chevron" aria-hidden="true">&#9662;</span>
+      </summary>
+      <div class="u-body">
+        <div class="coremsg">
+          <span class="coremsg-label">Core Message · Unit 3</span>
+          <p class="coremsg-text">A business plan is a hypothesis to test, not a promise to keep.</p>
+          <p class="coremsg-ilo"><strong>Learning focus · ILOs 1 &amp; 2</strong> — Investigate how AI and no-code tools change the way a digital venture moves from idea to tested business model, and critically assess the technical and market conditions that make a fast launch possible.</p>
+        </div>
+        <div class="rows">
+      <a class="rrow" href="gallery.html#unit3"><div class="rrow-badge" style="background:#1D2660">FG</div>
+      <div class="rrow-main"><div class="rrow-title">Framework Gallery</div><div class="rrow-sub">8 interactive frameworks · Slibraries 5–6</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="unit3_activity.html"><div class="rrow-badge" style="background:#2C7A9E">HK</div>
+      <div class="rrow-main"><div class="rrow-title">Mini-Hackathon — 90 Minutes to a Clickable MVP</div><div class="rrow-sub">Teams build a clickable MVP with free no-code and AI tools, test it on real classmates and map it on a Business Model Canvas.</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="unit3_case.html"><div class="rrow-badge" style="background:#2E8B6F">CS</div>
+      <div class="rrow-main"><div class="rrow-title">Case: Lovable: When Building Becomes Cheap</div><div class="rrow-sub">A Stockholm start-up turned &#x27;describe your app in a sentence&#x27; into one of Europe&#x27;s fastest-growing software companies.</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="unit3_prereading.html"><div class="rrow-badge" style="background:#C77C2E">PR</div>
+      <div class="rrow-main"><div class="rrow-title">Pre-Reading: Nine Boxes Beat Forty Pages</div><div class="rrow-sub">Key framework: Business Model Canvas</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="unit3_reflection.html"><div class="rrow-badge" style="background:#7A4FA3">RF</div>
+      <div class="rrow-main"><div class="rrow-title">Reflection Prompt &amp; Key Takeaways</div><div class="rrow-sub">3 questions for independent study · 5 key takeaways</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="slibrary.html#unit3"><div class="rrow-badge" style="background:#3E8E7E">AU</div>
+      <div class="rrow-main"><div class="rrow-title">Framework Authors — Slibrary</div><div class="rrow-sub">7 thinkers · Eric Ries, Steve Blank, Saras Sarasvathy, Francis J. Aguilar, Osterwalder &amp; Pigneur, Ash Maurya…</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="glossary.html#unit3"><div class="rrow-badge" style="background:#2F5D8C">GL</div>
+      <div class="rrow-main"><div class="rrow-title">Glossary &mdash; Unit 3</div><div class="rrow-sub">6 professional definitions &middot; Harvard-referenced &middot; Minimum viable product (MVP), Business model, Pivot, Validated learning&hellip;</div></div>
+      <div class="rrow-right">HTML</div></a>
+        </div>
+      </div>
+    </details>
+    <details class="unit">
+      <summary>
+        <span class="u-badge" style="background:#C77C2E">4</span>
+        <span class="u-headings">
+          <span class="u-title">Acting on Digital Entrepreneurial Forces</span>
+          <span class="u-format">BUSINESS CHALLENGE</span>
+        </span>
+        <span class="u-chevron" aria-hidden="true">&#9662;</span>
+      </summary>
+      <div class="u-body">
+        <div class="coremsg">
+          <span class="coremsg-label">Core Message · Unit 4</span>
+          <p class="coremsg-text">Opportunity is free; acting on it is not — a digital strategy is a decision about where to spend scarce resources first.</p>
+          <p class="coremsg-ilo"><strong>Learning focus · ILOs 1 &amp; 3</strong> — Investigate how digital ventures turn opportunities into strategy, budgets and channel choices, and evaluate the entrepreneurial management decisions and leadership needed to allocate scarce resources under pressure.</p>
+        </div>
+        <div class="rows">
+      <a class="rrow" href="gallery.html#unit4"><div class="rrow-badge" style="background:#1D2660">FG</div>
+      <div class="rrow-main"><div class="rrow-title">Framework Gallery</div><div class="rrow-sub">8 interactive frameworks · Slibraries 7–8</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="unit4_activity.html"><div class="rrow-badge" style="background:#C77C2E">BC</div>
+      <div class="rrow-main"><div class="rrow-title">Business Challenge — The €100k Launch Room</div><div class="rrow-sub">Founding teams receive a seed budget in play money, choose a strategy, allocate resources and channels, and survive three market shocks.</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="unit4_case.html"><div class="rrow-badge" style="background:#2E8B6F">CS</div>
+      <div class="rrow-main"><div class="rrow-title">Case: Vinted: From Burning Cash to Choosing Where to Spend</div><div class="rrow-sub">How a Lithuanian second-hand marketplace turned hard resource choices into Europe&#x27;s first profitable pre-loved fashion platform.</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="unit4_prereading.html"><div class="rrow-badge" style="background:#C77C2E">PR</div>
+      <div class="rrow-main"><div class="rrow-title">Pre-Reading: Nineteen Channels, One Budget</div><div class="rrow-sub">Key framework: Bullseye Traction Framework</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="unit4_reflection.html"><div class="rrow-badge" style="background:#7A4FA3">RF</div>
+      <div class="rrow-main"><div class="rrow-title">Reflection Prompt &amp; Key Takeaways</div><div class="rrow-sub">3 questions for independent study · 5 key takeaways</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="slibrary.html#unit4"><div class="rrow-badge" style="background:#3E8E7E">AU</div>
+      <div class="rrow-main"><div class="rrow-title">Framework Authors — Slibrary</div><div class="rrow-sub">8 thinkers · Heinz Weihrich, Michael E. Porter, H. Igor Ansoff, Kim &amp; Mauborgne, Jay B. Barney, Weinberg &amp; Mares…</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="glossary.html#unit4"><div class="rrow-badge" style="background:#2F5D8C">GL</div>
+      <div class="rrow-main"><div class="rrow-title">Glossary &mdash; Unit 4</div><div class="rrow-sub">6 professional definitions &middot; Harvard-referenced &middot; Digital strategy, Customer acquisition cost (CAC), Customer lifetime value (LTV), Traction channel&hellip;</div></div>
+      <div class="rrow-right">HTML</div></a>
+        </div>
+      </div>
+    </details>
+    <details class="unit">
+      <summary>
+        <span class="u-badge" style="background:#2E8B6F">5</span>
+        <span class="u-headings">
+          <span class="u-title">Business Incubators in Entrepreneurship in Digitalization</span>
+          <span class="u-format">CASE STUDY</span>
+        </span>
+        <span class="u-chevron" aria-hidden="true">&#9662;</span>
+      </summary>
+      <div class="u-body">
+        <div class="coremsg">
+          <span class="coremsg-label">Core Message · Unit 5</span>
+          <p class="coremsg-text">Ecosystems do not create founders; they shorten the distance between an idea and the people who can make it real.</p>
+          <p class="coremsg-ilo"><strong>Learning focus · ILOs 2 &amp; 3</strong> — Critically assess how incubators, accelerators, investors and IP protection create the conditions for a digital idea to become a venture, and reflect on your own role when stakeholders put you on the spot.</p>
+        </div>
+        <div class="rows">
+      <a class="rrow" href="gallery.html#unit5"><div class="rrow-badge" style="background:#1D2660">FG</div>
+      <div class="rrow-main"><div class="rrow-title">Framework Gallery</div><div class="rrow-sub">8 interactive frameworks · Slibraries 9–10</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="unit5_activity.html"><div class="rrow-badge" style="background:#2E8B6F">CC</div>
+      <div class="rrow-main"><div class="rrow-title">Case Study — The Cold-Call Clinic</div><div class="rrow-sub">Harvard-style cold-calling on the Langfuse case, then your team applies to a real Munich programme.</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="unit5_case.html"><div class="rrow-badge" style="background:#2E8B6F">CS</div>
+      <div class="rrow-main"><div class="rrow-title">Case: Langfuse: Pivoting Inside the Accelerator</div><div class="rrow-sub">How three Berlin founders found their real idea in the middle of Y Combinator.</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="unit5_prereading.html"><div class="rrow-badge" style="background:#C77C2E">PR</div>
+      <div class="rrow-main"><div class="rrow-title">Pre-Reading: What Are You Really Buying From an Accelerator?</div><div class="rrow-sub">Key framework: Incubators vs Accelerators</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="unit5_reflection.html"><div class="rrow-badge" style="background:#7A4FA3">RF</div>
+      <div class="rrow-main"><div class="rrow-title">Reflection Prompt &amp; Key Takeaways</div><div class="rrow-sub">3 questions for independent study · 5 key takeaways</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="slibrary.html#unit5"><div class="rrow-badge" style="background:#3E8E7E">AU</div>
+      <div class="rrow-main"><div class="rrow-title">Framework Authors — Slibrary</div><div class="rrow-sub">8 thinkers · Mitchell, Agle &amp; Wood, Aubrey L. Mendelow, Daniel Isenberg, Cohen &amp; Hochberg, Shane &amp; Venkataraman, UK Design Council…</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="glossary.html#unit5"><div class="rrow-badge" style="background:#2F5D8C">GL</div>
+      <div class="rrow-main"><div class="rrow-title">Glossary &mdash; Unit 5</div><div class="rrow-sub">6 professional definitions &middot; Harvard-referenced &middot; Business incubator, Startup accelerator, Venture capital, Entrepreneurial ecosystem&hellip;</div></div>
+      <div class="rrow-right">HTML</div></a>
+        </div>
+      </div>
+    </details>
+    <details class="unit">
+      <summary>
+        <span class="u-badge" style="background:#B4444E">6</span>
+        <span class="u-headings">
+          <span class="u-title">Assessing Well-designed Prototypes and Building on Entrepreneurial Concepts</span>
+          <span class="u-format">PROTOTYPE SPRINT</span>
+        </span>
+        <span class="u-chevron" aria-hidden="true">&#9662;</span>
+      </summary>
+      <div class="u-body">
+        <div class="coremsg">
+          <span class="coremsg-label">Core Message · Unit 6</span>
+          <p class="coremsg-text">A prototype is a question you can hold in your hand — build it to learn, not to impress.</p>
+          <p class="coremsg-ilo"><strong>Learning focus · ILOs 1 &amp; 3</strong> — Investigate how digital prototyping and user testing improve traditional product development, and reflect on how you lead and respond when real users reject your design.</p>
+        </div>
+        <div class="rows">
+      <a class="rrow" href="gallery.html#unit6"><div class="rrow-badge" style="background:#1D2660">FG</div>
+      <div class="rrow-main"><div class="rrow-title">Framework Gallery</div><div class="rrow-sub">8 interactive frameworks · Slibraries 11–12</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="unit6_activity.html"><div class="rrow-badge" style="background:#B4444E">PS</div>
+      <div class="rrow-main"><div class="rrow-title">Prototype Sprint — Paper Before Pixels</div><div class="rrow-sub">Build a paper or clickable prototype of your venture idea and test it live with real users from other groups.</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="unit6_case.html"><div class="rrow-badge" style="background:#2E8B6F">CS</div>
+      <div class="rrow-main"><div class="rrow-title">Case: Humane AI Pin: The Prototype That Skipped the Questions</div><div class="rrow-sub">How a 230-million-dollar AI wearable launched, flopped and was shut down within a year.</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="unit6_prereading.html"><div class="rrow-badge" style="background:#C77C2E">PR</div>
+      <div class="rrow-main"><div class="rrow-title">Pre-Reading: Your Prototype Is a Question, Not a Product</div><div class="rrow-sub">Key framework: What Do Prototypes Prototype?</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="unit6_reflection.html"><div class="rrow-badge" style="background:#7A4FA3">RF</div>
+      <div class="rrow-main"><div class="rrow-title">Reflection Prompt &amp; Key Takeaways</div><div class="rrow-sub">3 questions for independent study · 5 key takeaways</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="slibrary.html#unit6"><div class="rrow-badge" style="background:#3E8E7E">AU</div>
+      <div class="rrow-main"><div class="rrow-title">Framework Authors — Slibrary</div><div class="rrow-sub">8 thinkers · Knapp, Zeratsky &amp; Kowitz, Houde &amp; Hill, Noriaki Kano, Jakob Nielsen, Geoffrey A. Moore, Dan Olsen…</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="glossary.html#unit6"><div class="rrow-badge" style="background:#2F5D8C">GL</div>
+      <div class="rrow-main"><div class="rrow-title">Glossary &mdash; Unit 6</div><div class="rrow-sub">6 professional definitions &middot; Harvard-referenced &middot; Prototype, Design thinking, Product–market fit, Usability testing&hellip;</div></div>
+      <div class="rrow-right">HTML</div></a>
+        </div>
+      </div>
+    </details>
+    <details class="unit">
+      <summary>
+        <span class="u-badge" style="background:#9A5B2E">7</span>
+        <span class="u-headings">
+          <span class="u-title">Sociological Considerations for Entrepreneurship in Digitalization</span>
+          <span class="u-format">DEBATE</span>
+        </span>
+        <span class="u-chevron" aria-hidden="true">&#9662;</span>
+      </summary>
+      <div class="u-body">
+        <div class="coremsg">
+          <span class="coremsg-label">Core Message · Unit 7</span>
+          <p class="coremsg-text">Founders are made by context: culture, role models and support systems shape who dares to start.</p>
+          <p class="coremsg-ilo"><strong>Learning focus · ILOs 2 &amp; 3</strong> — Critically assess how culture, institutions, role models and support systems create the social conditions for digital entrepreneurship, and reflect on your own cognitive adaptability as a future founder.</p>
+        </div>
+        <div class="rows">
+      <a class="rrow" href="gallery.html#unit7"><div class="rrow-badge" style="background:#1D2660">FG</div>
+      <div class="rrow-main"><div class="rrow-title">Framework Gallery</div><div class="rrow-sub">8 interactive frameworks · Slibraries 13–14</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="unit7_activity.html"><div class="rrow-badge" style="background:#9A5B2E">DB</div>
+      <div class="rrow-main"><div class="rrow-title">Debate — Born or Made? The Oxford Motion</div><div class="rrow-sub">Two benches argue an Oxford-style motion with evidence from Jumia and the unit frameworks; the floor votes before and after.</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="unit7_case.html"><div class="rrow-badge" style="background:#2E8B6F">CS</div>
+      <div class="rrow-main"><div class="rrow-title">Case: Jumia: Resetting the &#x27;Amazon of Africa&#x27;</div><div class="rrow-sub">How a pan-African e-commerce pioneer cut back to fit its context — and what that says about founders and their environment.</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="unit7_prereading.html"><div class="rrow-badge" style="background:#C77C2E">PR</div>
+      <div class="rrow-main"><div class="rrow-title">Pre-Reading: Founders Are Not Born Thinking Like Founders</div><div class="rrow-sub">Key framework: Cognitive Adaptability</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="unit7_reflection.html"><div class="rrow-badge" style="background:#7A4FA3">RF</div>
+      <div class="rrow-main"><div class="rrow-title">Reflection Prompt &amp; Key Takeaways</div><div class="rrow-sub">3 questions for independent study · 5 key takeaways</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="slibrary.html#unit7"><div class="rrow-badge" style="background:#3E8E7E">AU</div>
+      <div class="rrow-main"><div class="rrow-title">Framework Authors — Slibrary</div><div class="rrow-sub">8 thinkers · Geert Hofstede, W. Richard Scott, Global Entrepreneurship Monitor (GEM), Nahapiet &amp; Ghoshal, Haynie &amp; Shepherd, Bandura; Chen, Greene &amp; Crick…</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="glossary.html#unit7"><div class="rrow-badge" style="background:#2F5D8C">GL</div>
+      <div class="rrow-main"><div class="rrow-title">Glossary &mdash; Unit 7</div><div class="rrow-sub">6 professional definitions &middot; Harvard-referenced &middot; Entrepreneurial culture, Institutional voids, Cognitive adaptability, Entrepreneurial self-efficacy&hellip;</div></div>
+      <div class="rrow-right">HTML</div></a>
+        </div>
+      </div>
+    </details>
+    <details class="unit">
+      <summary>
+        <span class="u-badge" style="background:#3D7F3D">8</span>
+        <span class="u-headings">
+          <span class="u-title">Sustainable Entrepreneurship</span>
+          <span class="u-format">WORLD CAFÉ</span>
+        </span>
+        <span class="u-chevron" aria-hidden="true">&#9662;</span>
+      </summary>
+      <div class="u-body">
+        <div class="coremsg">
+          <span class="coremsg-label">Core Message · Unit 8</span>
+          <p class="coremsg-text">Sustainable ventures win when the impact is built into the business model, not bolted on to the marketing.</p>
+          <p class="coremsg-ilo"><strong>Learning focus · ILOs 3 &amp; 4</strong> — Evaluate how digital ventures build social and environmental value into their business models and support networks, and communicate how this differs from traditional, add-on approaches to sustainability.</p>
+        </div>
+        <div class="rows">
+      <a class="rrow" href="gallery.html#unit8"><div class="rrow-badge" style="background:#1D2660">FG</div>
+      <div class="rrow-main"><div class="rrow-title">Framework Gallery</div><div class="rrow-sub">8 interactive frameworks · Slibraries 15–16</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="unit8_activity.html"><div class="rrow-badge" style="background:#3D7F3D">WC</div>
+      <div class="rrow-main"><div class="rrow-title">World Café — The Surplus Table</div><div class="rrow-sub">Students rotate between five hosted café tables, each exploring one sustainability question through the Too Good To Go case, and harvest a shared impact model.</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="unit8_case.html"><div class="rrow-badge" style="background:#2E8B6F">CS</div>
+      <div class="rrow-main"><div class="rrow-title">Case: Too Good To Go: Profit From Every Unsold Croissant</div><div class="rrow-sub">How a Copenhagen app turned food waste into a B Corp business model — and reached profit while growing.</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="unit8_prereading.html"><div class="rrow-badge" style="background:#C77C2E">PR</div>
+      <div class="rrow-main"><div class="rrow-title">Pre-Reading: Impact Inside the Engine, Not on the Paintwork</div><div class="rrow-sub">Key framework: Triple-Layered Business Model Canvas</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="unit8_reflection.html"><div class="rrow-badge" style="background:#7A4FA3">RF</div>
+      <div class="rrow-main"><div class="rrow-title">Reflection Prompt &amp; Key Takeaways</div><div class="rrow-sub">3 questions for independent study · 5 key takeaways</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="slibrary.html#unit8"><div class="rrow-badge" style="background:#3E8E7E">AU</div>
+      <div class="rrow-main"><div class="rrow-title">Framework Authors — Slibrary</div><div class="rrow-sub">8 thinkers · John Elkington, Joyce &amp; Paquin, Ellen MacArthur Foundation, GRI, UN Global Compact &amp; WBCSD, Fred D. Davis, Kathy E. Kram…</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="glossary.html#unit8"><div class="rrow-badge" style="background:#2F5D8C">GL</div>
+      <div class="rrow-main"><div class="rrow-title">Glossary &mdash; Unit 8</div><div class="rrow-sub">6 professional definitions &middot; Harvard-referenced &middot; Sustainable entrepreneurship, Circular economy, Triple bottom line, B Corporation&hellip;</div></div>
+      <div class="rrow-right">HTML</div></a>
+        </div>
+      </div>
+    </details>
+    <details class="unit">
+      <summary>
+        <span class="u-badge" style="background:#2F5D8C">9</span>
+        <span class="u-headings">
+          <span class="u-title">Financing Well-informed Digital Entrepreneurial Ventures</span>
+          <span class="u-format">PITCH SIMULATION</span>
+        </span>
+        <span class="u-chevron" aria-hidden="true">&#9662;</span>
+      </summary>
+      <div class="u-body">
+        <div class="coremsg">
+          <span class="coremsg-label">Core Message · Unit 9</span>
+          <p class="coremsg-text">Investors do not fund ideas; they fund evidence that money will turn into growth before it runs out.</p>
+          <p class="coremsg-ilo"><strong>Learning focus · ILOs 3 &amp; 4</strong> — Evaluate how founders reflect on and lead fundraising decisions, and communicate how digital ventures are financed differently from traditional businesses, using burn rate, runway and investor criteria.</p>
+        </div>
+        <div class="rows">
+      <a class="rrow" href="gallery.html#unit9"><div class="rrow-badge" style="background:#1D2660">FG</div>
+      <div class="rrow-main"><div class="rrow-title">Framework Gallery</div><div class="rrow-sub">8 interactive frameworks · Slibraries 17–18</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="unit9_activity.html"><div class="rrow-badge" style="background:#2F5D8C">PT</div>
+      <div class="rrow-main"><div class="rrow-title">Pitch Simulation — Runway or Runaway?</div><div class="rrow-sub">Teams build a burn-rate and runway sheet, pitch to a student VC panel and defend their numbers under due diligence.</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="unit9_case.html"><div class="rrow-badge" style="background:#2E8B6F">CS</div>
+      <div class="rrow-main"><div class="rrow-title">Case: Builder.ai: When the Money Ran Out Faster Than the Story</div><div class="rrow-sub">A London AI unicorn that raised over $450 million entered insolvency in May 2025 after its numbers were questioned.</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="unit9_prereading.html"><div class="rrow-badge" style="background:#C77C2E">PR</div>
+      <div class="rrow-main"><div class="rrow-title">Pre-Reading: Your Runway Is Your Deadline</div><div class="rrow-sub">Key framework: Burn Rate, Runway &amp; Fume Date</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="unit9_reflection.html"><div class="rrow-badge" style="background:#7A4FA3">RF</div>
+      <div class="rrow-main"><div class="rrow-title">Reflection Prompt &amp; Key Takeaways</div><div class="rrow-sub">3 questions for independent study · 5 key takeaways</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="slibrary.html#unit9"><div class="rrow-badge" style="background:#3E8E7E">AU</div>
+      <div class="rrow-main"><div class="rrow-title">Framework Authors — Slibrary</div><div class="rrow-sub">8 thinkers · Berger &amp; Udell, Gompers, Gornall, Kaplan &amp; Strebulaev, Myers &amp; Majluf, Auerswald &amp; Branscomb, Paul Graham, Feld &amp; Mendelson…</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="glossary.html#unit9"><div class="rrow-badge" style="background:#2F5D8C">GL</div>
+      <div class="rrow-main"><div class="rrow-title">Glossary &mdash; Unit 9</div><div class="rrow-sub">6 professional definitions &middot; Harvard-referenced &middot; Burn rate, Runway, Seed funding, Due diligence&hellip;</div></div>
+      <div class="rrow-right">HTML</div></a>
+        </div>
+      </div>
+    </details>
+    <details class="unit">
+      <summary>
+        <span class="u-badge" style="background:#8C3B5E">10</span>
+        <span class="u-headings">
+          <span class="u-title">Ethical Models and Practices Affecting Digitalization</span>
+          <span class="u-format">ETHICS TRIBUNAL</span>
+        </span>
+        <span class="u-chevron" aria-hidden="true">&#9662;</span>
+      </summary>
+      <div class="u-body">
+        <div class="coremsg">
+          <span class="coremsg-label">Core Message · Unit 10</span>
+          <p class="coremsg-text">What a digital venture can do at scale and what it should do are separate questions — ask both before launch.</p>
+          <p class="coremsg-ilo"><strong>Learning focus · ILOs 2, 3 &amp; 4</strong> — Critically assess the technical and social conditions behind ethical problems in digital ventures, reflect on one&#x27;s own ethical stance under pressure, and communicate how ethics shifts from traditional to digital business operations.</p>
+        </div>
+        <div class="rows">
+      <a class="rrow" href="gallery.html#unit10"><div class="rrow-badge" style="background:#1D2660">FG</div>
+      <div class="rrow-main"><div class="rrow-title">Framework Gallery</div><div class="rrow-sub">8 interactive frameworks · Slibraries 19–20</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="unit10_activity.html"><div class="rrow-badge" style="background:#8C3B5E">ET</div>
+      <div class="rrow-main"><div class="rrow-title">Ethics Tribunal — Who Pays for Safe AI?</div><div class="rrow-sub">Students hold a role-based hearing on outsourced AI data work, then write a fair outsourcing charter for their own venture.</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="unit10_case.html"><div class="rrow-badge" style="background:#2E8B6F">CS</div>
+      <div class="rrow-main"><div class="rrow-title">Case: Sama &amp; OpenAI: The Human Cost of a Cleaner Chatbot</div><div class="rrow-sub">A TIME investigation into Kenyan data labellers raised the question of who is responsible for the hidden work behind AI.</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="unit10_prereading.html"><div class="rrow-badge" style="background:#C77C2E">PR</div>
+      <div class="rrow-main"><div class="rrow-title">Pre-Reading: Legal Is Not the Same as Fair</div><div class="rrow-sub">Key framework: Carroll&#x27;s CSR Pyramid</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="unit10_reflection.html"><div class="rrow-badge" style="background:#7A4FA3">RF</div>
+      <div class="rrow-main"><div class="rrow-title">Reflection Prompt &amp; Key Takeaways</div><div class="rrow-sub">3 questions for independent study · 5 key takeaways</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="slibrary.html#unit10"><div class="rrow-badge" style="background:#3E8E7E">AU</div>
+      <div class="rrow-main"><div class="rrow-title">Framework Authors — Slibrary</div><div class="rrow-sub">7 thinkers · Crane &amp; Matten, Archie B. Carroll, Batya Friedman, Floridi &amp; Cowls, Shoshana Zuboff, European Parliament &amp; Council of the EU…</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="glossary.html#unit10"><div class="rrow-badge" style="background:#2F5D8C">GL</div>
+      <div class="rrow-main"><div class="rrow-title">Glossary &mdash; Unit 10</div><div class="rrow-sub">6 professional definitions &middot; Harvard-referenced &middot; Digital ethics, Data protection, Algorithmic bias, Ghost work&hellip;</div></div>
+      <div class="rrow-right">HTML</div></a>
+        </div>
+      </div>
+    </details>
+    <details class="unit">
+      <summary>
+        <span class="u-badge" style="background:#1D2660">11</span>
+        <span class="u-headings">
+          <span class="u-title">Key Case Findings and Roundtable Discussion</span>
+          <span class="u-format">ROUNDTABLE · CAPSTONE</span>
+        </span>
+        <span class="u-chevron" aria-hidden="true">&#9662;</span>
+      </summary>
+      <div class="u-body">
+        <div class="coremsg">
+          <span class="coremsg-label">Core Message · Unit 11</span>
+          <p class="coremsg-text">The cases differ, the lesson repeats: digital advantage belongs to founders who test, reflect and adapt faster than their context changes.</p>
+          <p class="coremsg-ilo"><strong>Learning focus · Integrates ILOs 1–4</strong> — Integrate the course by comparing ten real digital ventures, critically assessing the technical and social conditions behind their outcomes, reflecting on your own entrepreneurial leadership, and communicating how digitally governed businesses differ from traditional ones.</p>
+        </div>
+        <div class="rows">
+      <a class="rrow" href="gallery.html#unit11"><div class="rrow-badge" style="background:#1D2660">FG</div>
+      <div class="rrow-main"><div class="rrow-title">Framework Gallery</div><div class="rrow-sub">8 interactive frameworks · Slibraries 21–22</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="unit11_activity.html"><div class="rrow-badge" style="background:#1D2660">RT</div>
+      <div class="rrow-main"><div class="rrow-title">Roundtable — The Pattern Hunters</div><div class="rrow-sub">Present your key case findings, rehearse your Digital Venture Project, then find the patterns that connect ten real ventures.</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="unit11_case.html"><div class="rrow-badge" style="background:#2E8B6F">CS</div>
+      <div class="rrow-main"><div class="rrow-title">Case: The Roundtable Dossier: Ten Ventures, One Pattern</div><div class="rrow-sub">A synthesis briefing of every case in the course — from quick commerce to AI labour supply chains.</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="unit11_prereading.html"><div class="rrow-badge" style="background:#C77C2E">PR</div>
+      <div class="rrow-main"><div class="rrow-title">Pre-Reading: Ten Stories Are Not Yet a Lesson</div><div class="rrow-sub">Key framework: Cross-Case Synthesis</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="unit11_reflection.html"><div class="rrow-badge" style="background:#7A4FA3">RF</div>
+      <div class="rrow-main"><div class="rrow-title">Reflection Prompt &amp; Key Takeaways</div><div class="rrow-sub">3 questions for independent study · 5 key takeaways</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="slibrary.html#unit11"><div class="rrow-badge" style="background:#3E8E7E">AU</div>
+      <div class="rrow-main"><div class="rrow-title">Framework Authors — Slibrary</div><div class="rrow-sub">8 thinkers · Eisenhardt &amp; Yin, Barbara Minto, Stephen Toulmin, Edward de Bono, Graham Gibbs, Donald A. Schön…</div></div>
+      <div class="rrow-right">HTML</div></a>
+      <a class="rrow" href="glossary.html#unit11"><div class="rrow-badge" style="background:#2F5D8C">GL</div>
+      <div class="rrow-main"><div class="rrow-title">Glossary &mdash; Unit 11</div><div class="rrow-sub">6 professional definitions &middot; Harvard-referenced &middot; Cross-case analysis, Roundtable discussion, Synthesis, Reflective practice&hellip;</div></div>
+      <div class="rrow-right">HTML</div></a>
+        </div>
+      </div>
+    </details>
+  </div>
+
+  <h2 class="block-label" style="margin-top:36px">Course Essentials</h2>
+  <div class="ess">
+    <div class="ess-card">
+      <h3>Intended Learning Outcomes</h3>
+      <ol>
+        <li>Investigate the role digital technologies perform in improving traditional ways of doing business today.</li>
+        <li>Critically assess the technical and social conditions which enable digital entrepreneurship to occur.</li>
+        <li>Evaluate entrepreneurial management processes that involve a need for self-reflection and situational leadership.</li>
+        <li>Communicate the primary differences between traditional ways of operating business in comparison with digitally governed business operations.</li>
+      </ol>
+    </div>
+    <div class="ess-card">
+      <h3>Assessment</h3>
+      <div class="as"><div class="pct" style="background:#4A5AA8">40%</div><div><div class="nm">Assignment — Digital Transformation Audit</div><div class="dt">ILOs 1 &amp; 4 · released 15 Oct 2026 · due 12 Nov 2026</div></div></div>
+      <div class="as"><div class="pct" style="background:#2E8B6F">60%</div><div><div class="nm">Project — Digital Venture Project</div><div class="dt">ILOs 2, 3 &amp; 4 · released 19 Nov 2026 · due 21 Jan 2027</div></div></div>
+      <p class="facts">Full briefs, rubrics and submission times on Moodle. Harvard referencing (in-text citations <em>and</em> reference list) is required in all written work. 130 learning hours · 12 sessions × 2.5 hours.</p>
+    </div>
+  </div>
+
+  <h2 class="block-label" style="margin-top:36px">Complete Gallery</h2>
+  <div class="big-links">
+    <a href="gallery.html"><span class="mark">■</span>All 88 Frameworks — Thumbnail Gallery<span class="sub">22 Slibraries · one picture and one line per framework · quick-look cards</span></a>
+    <a href="frameworks.html"><span class="mark">■</span>88 Framework Reference Sheets<span class="sub">Print-styled A4 sheets · definition, origin, use, example and Harvard sources</span></a>
+    <a href="slibrary.html"><span class="mark">■</span>86 Framework Authors — The Thinkers Behind the Frameworks<span class="sub">Eleven units · 22 Slibraries · full six-section profiles</span></a>
+    <a href="glossary.html"><span class="mark">■</span>66 Key Terms — Glossary &amp; Key Terms<span class="sub">Eleven units · searchable · professional definition and Harvard source per term</span></a>
+  </div>
+</main>
+
+<footer class="site">
+  <hr class="divider">
+  <p><strong>BDIBM313</strong> · Entrepreneurship in Digitalization · © 2026 Dr. Hildegard Haas</p>
+  <p style="font-size:12px;opacity:.7">EU Business School · Applying JD Meier's <strong>Thumbnail Thinking</strong> (2025) and Kurt Bostelaar's core-message method across the entire course</p>
+</footer>
+
+<script>
+  (function(){
+    var box=document.getElementById('siteSearch');
+    var units=Array.prototype.slice.call(document.querySelectorAll('details.unit'));
+    box.addEventListener('input',function(){
+      var q=this.value.toLowerCase().trim();
+      units.forEach(function(u){
+        var hit=!q||u.textContent.toLowerCase().indexOf(q)!==-1;
+        u.classList.toggle('hidden',!hit);
+        if(q&&hit)u.open=true; if(!q)u.open=(u===units[0]);
+      });
+    });
+  })();
+</script>
+<style id="course-protect-css">
+  *{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none}
+  input,textarea{-webkit-user-select:text;-moz-user-select:text;-ms-user-select:text;user-select:text}
+  @media print{html,body{display:none !important}}
+</style>
+<script id="course-protect-js">
+(function(){
+  // block context menu (right-click)
+  document.addEventListener('contextmenu',function(e){e.preventDefault();},{capture:true});
+  // block copy / cut
+  ['copy','cut'].forEach(function(ev){document.addEventListener(ev,function(e){e.preventDefault();},{capture:true});});
+  // block drag of text/images
+  document.addEventListener('dragstart',function(e){e.preventDefault();},{capture:true});
+  // block common keyboard shortcuts: Ctrl/Cmd + C, X, S, P, U, A  and F12 / devtools
+  document.addEventListener('keydown',function(e){
+    var k=(e.key||'').toLowerCase();
+    var meta=e.ctrlKey||e.metaKey;
+    if(meta && ['c','x','s','p','u','a'].indexOf(k)!==-1){e.preventDefault();return false;}
+    if(k==='f12'){e.preventDefault();return false;}
+    if(meta && e.shiftKey && ['i','j','c'].indexOf(k)!==-1){e.preventDefault();return false;} // devtools
+    if(e.key==='PrintScreen'){e.preventDefault();return false;}
+  },{capture:true});
+  // block print()
+  window.addEventListener('beforeprint',function(e){/* CSS hides body */});
+})();
+</script>
+
+
+</body>
+</html>

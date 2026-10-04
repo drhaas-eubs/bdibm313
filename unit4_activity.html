@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BDIBM313 · Unit 4 · Business Challenge — The €100k Launch Room</title>
+<meta name="description" content="BDIBM313 Unit 4 Business Challenge: Business Challenge — The €100k Launch Room">
+<style>
+  :root{--navy:#1D2660;--teal:#00B388;--ink:#1D3A5C;--gray:#F4F6F9;--line:#E3E8F0;--muted:#5A6072;--acc:#C77C2E}
+  *{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#1a1a1a;background:#FAFBFC;line-height:1.6}
+  .backbar{background:#eef4f0;padding:12px 22px}
+  .backbar a{color:#2E8B6F;text-decoration:none;font-weight:bold;font-size:14px}
+  .backbar a:hover{text-decoration:underline}
+  .hero{background:var(--acc);color:#fff;padding:34px 26px 28px}
+  .hero .kick{font-size:12px;font-weight:bold;letter-spacing:2px;opacity:.85;text-transform:uppercase;margin:0}
+  .hero h1{margin:8px 0 4px;font-size:clamp(24px,4vw,34px);line-height:1.2}
+  .hero .sub{margin:0;font-size:15px;opacity:.92}
+  .hero .unit{margin:10px 0 0;font-size:13px;opacity:.7}
+  main{max-width:820px;margin:0 auto;padding:34px 24px 60px}
+  .ilo{background:#EEF2FB;border-radius:10px;padding:14px 18px;margin:0 0 22px}
+  .ilo .l{font-size:11px;font-weight:bold;letter-spacing:1.2px;text-transform:uppercase;color:var(--acc)}
+  .ilo p{margin:6px 0 0;font-size:14px;color:var(--ink)}
+  .card{background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 2px 8px rgba(29,38,96,.06);padding:26px 28px;margin:0 0 22px}
+  h2.sec{color:var(--ink);font-size:15px;text-transform:uppercase;letter-spacing:.6px;margin:0 0 12px;border-bottom:2px solid var(--acc);padding-bottom:7px;display:inline-block}
+  h3{color:var(--ink);font-size:16px;margin:20px 0 6px}
+  p{margin:0 0 12px;font-size:15px}
+  .lead{font-size:17px;font-weight:bold;color:var(--ink)}
+  .redmsg{border-left:4px solid var(--acc);color:var(--acc);font-weight:bold;font-style:italic;font-size:16px;padding:6px 0 6px 16px;margin:0 0 18px}
+  .story{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin:14px 0 20px}
+  .story .st{background:var(--gray);border-radius:9px;padding:15px 16px}
+  .story .st .lbl{font-size:11px;font-weight:bold;letter-spacing:.5px;color:var(--acc);text-transform:uppercase;margin-bottom:8px}
+  .story .st p{font-size:13.5px;margin:0}
+  ol,ul{margin:6px 0 12px;padding-left:22px} li{margin:0 0 9px;font-size:15px}
+  .phase{display:flex;gap:14px;align-items:baseline;padding:11px 0;border-bottom:1px solid var(--line)}
+  .phase .pt{flex:1;font-size:14.5px} .phase .pm{flex:none;color:var(--muted);font-size:13px;font-weight:bold}
+  .step{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--line)}
+  .step:last-child{border-bottom:none}
+  .step .sn{flex:none;width:30px;height:30px;border-radius:50%;background:var(--acc);color:#fff;font-weight:bold;font-size:13px;display:flex;align-items:center;justify-content:center;margin-top:2px}
+  .step .sb{flex:1}.step .st{font-weight:bold;color:var(--ink);font-size:15px}
+  .step .sm{color:var(--muted);font-size:12.5px;font-weight:bold;margin-left:6px}
+  .step p{font-size:14.5px;margin:4px 0 0}
+  .warm{background:#FFF8DD;border:1px solid #F3E2A0;border-radius:10px;padding:14px 18px;margin:0 0 4px}
+  .warm .wl{font-size:11px;font-weight:bold;letter-spacing:1.2px;text-transform:uppercase;color:#9A7A10}
+  .warm p{margin:6px 0 0;font-size:14.5px}
+  .prov p{font-size:16px;font-weight:bold;color:var(--ink);margin:0 0 6px}
+  .note,.prov p.note{color:var(--muted);font-size:13.5px;font-style:italic;font-weight:normal;margin-top:12px}
+  .deliv{background:var(--gray);border-left:4px solid var(--acc);border-radius:0 8px 8px 0;padding:12px 16px;margin:16px 0 0;font-size:14.5px}
+  .deliv b{color:var(--acc)}
+  .meta{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px}
+  .meta span{font-size:12px;font-weight:bold;color:var(--ink);background:var(--gray);border:1px solid var(--line);border-radius:6px;padding:4px 10px}
+  .facts li{font-size:14.5px}
+  .refbox{background:var(--gray);border-left:4px solid #2E8B6F;border-radius:0 8px 8px 0;padding:14px 16px;margin:14px 0 0}
+  .refbox .rl{font-size:11px;font-weight:bold;letter-spacing:.6px;color:#2E8B6F;display:block;margin-bottom:5px}
+  .refbox p{margin:0 0 6px;font-size:13.5px;overflow-wrap:anywhere}
+  .refbox p:last-child{margin:0}
+  .kt{list-style:none;padding:0;margin:4px 0 0}
+  .kt li{position:relative;padding:10px 0 10px 34px;border-bottom:1px solid var(--line);font-size:15px}
+  .kt li:last-child{border-bottom:none}
+  .kt li::before{content:"\2713";position:absolute;left:0;top:9px;width:22px;height:22px;border-radius:50%;background:var(--acc);color:#fff;font-size:12px;font-weight:bold;display:flex;align-items:center;justify-content:center}
+  .fwlink{display:inline-block;margin-top:6px;font-size:13px;font-weight:bold;color:var(--acc);text-decoration:none}
+  .fwlink:hover{text-decoration:underline}
+  .backlinks{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap}
+  .backlinks a{font-size:13px;font-weight:bold;text-decoration:none;color:var(--ink);background:#fff;border:1px solid var(--line);padding:9px 15px;border-radius:7px}
+  .backlinks a:hover{border-color:var(--acc);background:var(--gray)}
+  .pager{display:flex;justify-content:space-between;gap:12px;margin-top:14px;flex-wrap:wrap}
+  .pager a{font-size:12.5px;color:var(--muted);text-decoration:none;font-weight:bold}
+  .pager a:hover{color:var(--acc)}
+  footer{background:var(--navy);color:#fff;text-align:center;padding:24px;font-size:13px}
+  footer .d{height:2px;width:54px;background:var(--teal);border:none;margin:0 auto 12px}
+  @media(max-width:640px){.story{grid-template-columns:1fr}.card{padding:20px 18px}main{padding:26px 16px 50px}}
+</style>
+</head>
+<body>
+<div class="backbar"><a href="index.html">&larr; Back to Course Overview</a></div>
+<div class="hero"><p class="kick">BDIBM313 · Unit 4 · Business Challenge</p><h1>Business Challenge — The €100k Launch Room</h1><p class="sub">Founding teams receive a seed budget in play money, choose a strategy, allocate resources and channels, and survive three market shocks.</p><p class="unit">Acting on Digital Entrepreneurial Forces · Format: Business Challenge</p></div>
+<main>
+<div class="ilo"><span class="l">Learning Focus · ILOs 1 &amp; 3</span><p>Investigate how digital ventures turn opportunities into strategy, budgets and channel choices, and evaluate the entrepreneurial management decisions and leadership needed to allocate scarce resources under pressure.</p></div>
+<div class="card">
+      <p class="redmsg">Opportunity is free; acting on it is not — a digital strategy is a decision about where to spend scarce resources first.</p>
+      <div class="warm"><span class="wl">Warm-up · 10 min · Spend It or Save It</span><p>Every student receives ten paper tokens worth €1,000 each and three options on the board: hire a developer, buy Instagram ads, or keep cash. In 60 seconds, without talking, they place their tokens. The lecturer reveals the resulting spread and asks two students with opposite choices to defend them in 30 seconds each.</p></div>
+    </div>
+    <div class="card prov">
+      <h2 class="sec">The Provocation</h2>
+      <p>Vinted spent years losing money before it ever made a profit.</p><p>Every euro you spend on ads is a euro you cannot spend on product.</p><p>A strategy that does not say &#x27;no&#x27; to anything is a wish list.</p><p>The best channel is the one your competitors have not found yet.</p>
+      <p class="note">Read the lines with Vinted&#x27;s 2022 loss and 2023 profit on screen. Ask each team to write down, before the challenge starts, the one thing they will refuse to spend money on.</p>
+    </div>
+    <div class="card">
+      <h2 class="sec">How the Activity Runs</h2>
+      <div class="step"><div class="sn">1</div><div class="sb"><span class="st">Form the founding team</span><span class="sm">10 min</span><p>Teams of four or five receive a venture brief (for example, a second-hand marketplace for sports equipment in the DACH region) and assign roles: CEO, CFO, CMO, CTO and, if five, Head of Operations. Each role receives a private role card with one personal goal that may conflict with the others.</p></div></div><div class="step"><div class="sn">2</div><div class="sb"><span class="st">Opportunity and risk scan</span><span class="sm">20 min</span><p>Teams build a TOWS matrix on flipchart paper and one Five Forces sketch for their market. They choose one growth direction using the Ansoff Matrix and write a one-sentence strategy that includes what they will not do.</p></div></div><div class="step"><div class="sn">3</div><div class="sb"><span class="st">Budget and resource allocation</span><span class="sm">25 min</span><p>With €100,000 in play money (printed notes), teams allocate funds across people, technology, marketing channels and a cash reserve for 12 months. The CFO completes a simple budget sheet showing monthly burn, runway and a target CAC and LTV. At least three traction channels must be ranked with the Bullseye Framework.</p></div></div><div class="step"><div class="sn">4</div><div class="sb"><span class="st">Market shocks</span><span class="sm">25 min</span><p>The lecturer releases three shock cards at five-minute intervals, for example &#x27;Meta ad prices rise 40%&#x27;, &#x27;a competitor copies your feature&#x27; and &#x27;an investor offers €50k for 20% equity&#x27;. Teams must react, rebalance the budget and record each decision and the reason on a decision log.</p></div></div><div class="step"><div class="sn">5</div><div class="sb"><span class="st">Investor panel</span><span class="sm">20 min</span><p>Each team has 3 minutes to present its strategy, budget and channel mix to a panel of two students and the lecturer, followed by 1 minute of questions. The panel awards follow-on funding tokens based on clarity of choices, realistic unit economics and quality of decisions under pressure.</p></div></div>
+      <div class="deliv"><b>Deliverable.</b> A photographed one-page launch plan with the TOWS matrix, chosen Ansoff strategy, budget split, Bullseye channel ranking and the decision log for the three shocks.</div>
+    </div>
+    <div class="card">
+      <h2 class="sec">Session Run-Sheet</h2>
+      <p style="color:var(--muted);font-size:13.5px">Total session: 150 minutes.</p>
+      <div class="phase"><span class="pt">Warm-up: Spend It or Save It</span><span class="pm">10 min</span></div><div class="phase"><span class="pt">Provocation and challenge briefing</span><span class="pm">10 min</span></div><div class="phase"><span class="pt">Form the founding team</span><span class="pm">10 min</span></div><div class="phase"><span class="pt">Opportunity and risk scan</span><span class="pm">20 min</span></div><div class="phase"><span class="pt">Budget and resource allocation</span><span class="pm">25 min</span></div><div class="phase"><span class="pt">Break</span><span class="pm">10 min</span></div><div class="phase"><span class="pt">Market shocks</span><span class="pm">25 min</span></div><div class="phase"><span class="pt">Investor panel</span><span class="pm">20 min</span></div><div class="phase"><span class="pt">Debrief: Vinted case and key takeaways</span><span class="pm">20 min</span></div>
+      <p style="color:var(--muted);font-size:12.5px;margin-top:14px">The case for this session: <a class="fwlink" href="unit4_case.html">Vinted: From Burning Cash to Choosing Where to Spend &rarr;</a></p>
+    </div>
+<div class="backlinks">
+  <a href="index.html">&larr; Course Overview</a>
+  <a href="gallery.html#unit4">Framework Gallery</a>
+  <a href="slibrary.html#unit4">Framework Authors</a>
+  <a href="glossary.html#unit4">Glossary</a>
+</div>
+<div class="pager"><span></span><a href="unit4_case.html">Case Study &rarr;</a></div>
+</main>
+<footer><hr class="d"><p>© 2026 Dr. Hildegard Haas · EU Business School · BDIBM313</p></footer>
+<style id="course-protect-css">
+  *{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none}
+  input,textarea{-webkit-user-select:text;-moz-user-select:text;-ms-user-select:text;user-select:text}
+  @media print{html,body{display:none !important}}
+</style>
+<script id="course-protect-js">
+(function(){
+  // block context menu (right-click)
+  document.addEventListener('contextmenu',function(e){e.preventDefault();},{capture:true});
+  // block copy / cut
+  ['copy','cut'].forEach(function(ev){document.addEventListener(ev,function(e){e.preventDefault();},{capture:true});});
+  // block drag of text/images
+  document.addEventListener('dragstart',function(e){e.preventDefault();},{capture:true});
+  // block common keyboard shortcuts: Ctrl/Cmd + C, X, S, P, U, A  and F12 / devtools
+  document.addEventListener('keydown',function(e){
+    var k=(e.key||'').toLowerCase();
+    var meta=e.ctrlKey||e.metaKey;
+    if(meta && ['c','x','s','p','u','a'].indexOf(k)!==-1){e.preventDefault();return false;}
+    if(k==='f12'){e.preventDefault();return false;}
+    if(meta && e.shiftKey && ['i','j','c'].indexOf(k)!==-1){e.preventDefault();return false;} // devtools
+    if(e.key==='PrintScreen'){e.preventDefault();return false;}
+  },{capture:true});
+  // block print()
+  window.addEventListener('beforeprint',function(e){/* CSS hides body */});
+})();
+</script>
+
+
+</body>
+</html>
